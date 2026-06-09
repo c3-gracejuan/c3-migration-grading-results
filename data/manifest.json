@@ -1,0 +1,13 @@
+{
+ "datasets": {
+  "standalone": {
+   "label": "Product pages (migration)",
+   "n": 47
+  },
+  "collection": {
+   "label": "Collection tail",
+   "n": 666
+  }
+ },
+ "staging_password_hint": "Vercel visitor password required to open migrated staging links"
+}

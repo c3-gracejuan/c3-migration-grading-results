@@ -1,0 +1,2310 @@
+{
+ "rollup": {
+  "n": 47,
+  "dist": {
+   "FLAG-HUMAN": 20,
+   "ORACLE-UNAVAILABLE": 2,
+   "PASS": 25
+  },
+  "dist_by_status": {
+   "FLAG-HUMAN": {
+    "product-page": 20
+   },
+   "ORACLE-UNAVAILABLE": {
+    "product-page": 2
+   },
+   "PASS": {
+    "product-page": 25
+   }
+  },
+  "loss": {
+   "dropped body text (FAIL)": 19
+  },
+  "defects": {
+   "CONTENT_LOSS": 19
+  },
+  "order": [
+   "FLAG-HUMAN",
+   "NEEDS-FIX",
+   "NOT-MIGRATED",
+   "ORACLE-UNAVAILABLE",
+   "RENDERS-OK",
+   "PASS"
+  ]
+ },
+ "records": [
+  {
+   "id": "c3-agentic-ai-platform",
+   "family": "agentic-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 55 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/c3-agentic-ai-platform/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-agentic-ai-platform.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 775 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 564 text shingles, 43 imgs, 1 videos, 22 headings, 61 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-agentic-ai-websites",
+   "family": "agentic-ai",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 41 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/c3-agentic-ai-websites/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-agentic-ai-websites.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 734 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/557 shingles missing (2%). Largest:",
+      "    \u201c30 day free trial first name last name work email schedule a briefing thank you a product\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/GettyImages-1291999161-1.mp4",
+      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-ai-apa",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "prod_url": "https://c3.ai/c3-ai-apa/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-ai-apa.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 744 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 432 text shingles, 13 imgs, 4 videos, 14 headings, 7 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-ai-fellows",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "prod_url": "https://c3.ai/c3-ai-fellows/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-ai-fellows.png",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 754 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 34/911 shingles missing (4%). Largest:",
+      "    \u201cshortly with the information first name last name email please enter a business email address qualified talent exchange program qualified talent exchange \u2026\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2020/08/play-button.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-ai-initial-production-deployment",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 57 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/c3-ai-initial-production-deployment/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-ai-initial-production-deployment.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 747 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 2 dropped run(s), 38/627 shingles missing (6%). Largest:",
+      "    \u201cstarted with c3 ai first name last name email please enter a business email address company request a briefing thank you we \u2026\u201d",
+      "    \u201centerprise ai starts here first name last name email please enter a business email address company request a briefing thank you we \u2026\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-generative-ai-customers",
+   "family": "generative-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 55 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/c3-generative-ai/customers/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-generative-ai-customers.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 752 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 446 text shingles, 26 imgs, 0 videos, 16 headings, 38 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 6 prod-404 ref(s) (broken on prod too): /wp-content/uploads/2023/08/c3-generative-ai-overview-large.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (6 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-generative-ai-for-sales",
+   "family": "generative-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/c3-generative-ai-for-sales/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-generative-ai-for-sales.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 738 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 490 text shingles, 18 imgs, 0 videos, 14 headings, 7 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-generative-ai",
+   "family": "generative-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 60 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "prod_url": "https://c3.ai/c3-generative-ai/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-generative-ai.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 728 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 637 text shingles, 25 imgs, 1 videos, 31 headings, 39 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/03/gai-orchestrate-scaled.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-generative-marketing",
+   "family": "generative-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 47 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/c3-generative-marketing/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/c3-generative-marketing.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 735 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 478 text shingles, 19 imgs, 0 videos, 14 headings, 8 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "careers",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 76 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/careers/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/careers.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 754 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 4216 text shingles, 132 imgs, 0 videos, 224 headings, 2 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "company",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 60 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/company/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/company.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 719 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 826 text shingles, 44 imgs, 2 videos, 20 headings, 32 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "contact-us",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 35 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/contact-us/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/contact-us.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 722 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 333 text shingles, 14 imgs, 0 videos, 10 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-defense",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-defense/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-enterprise-ai-for-defense.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 763 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 548 text shingles, 105 imgs, 0 videos, 51 headings, 16 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2022/05/Panda-rso.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-government",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-government/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-enterprise-ai-for-government.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 722 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 510 text shingles, 19 imgs, 0 videos, 15 headings, 9 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-manufacturing",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-manufacturing/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-enterprise-ai-for-manufacturing.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 725 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 576 text shingles, 25 imgs, 0 videos, 19 headings, 12 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-oil-and-gas",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 33 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-oil-and-gas/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-enterprise-ai-for-oil-and-gas.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 760 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 144 text shingles, 3 imgs, 0 videos, 2 headings, 1 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-utilities",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-utilities/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-enterprise-ai-for-utilities.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 760 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 433 text shingles, 22 imgs, 0 videos, 16 headings, 12 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-healthcare-industry",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/healthcare-industry/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-healthcare-industry.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 765 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 667 text shingles, 69 imgs, 0 videos, 62 headings, 20 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:8(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 0, 'w': 1440, 'h': 0}",
+      "  - [geo] div.swiper-slide>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -150, 'y': -15, 'w': 1740, 'h': 770}",
+      "  - [geo] div.swiper-slide.swiper-slide-visible>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -1689, 'y': -15, 'w': 4818, 'h': 770}",
+      "  - [geo] div.grid-x.grid-margin-y>div.cell.large-4>div.wrapper>div.c3-horizon-card--info \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 3727, 'w': 160, 'h': 399}",
+      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3771, 'w': 96, 'h': 270}"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-maritime",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/industries/maritime/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/industries-maritime.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 720 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/1023 shingles missing (1%). Largest:",
+      "    \u201cevolve your shipbuilding operations first name last name work email meet with us thank you for your\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "investors",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "ORACLE-UNAVAILABLE",
+   "reason": "prod fetch failed: TimeoutError('The read operation timed out')",
+   "prod_url": "https://c3.ai/investors/",
+   "staging_url": "",
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": []
+  },
+  {
+   "id": "leadership",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/leadership/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/leadership.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 745 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 179 text shingles, 26 imgs, 0 videos, 31 headings, 2 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-c3-ai-aws-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
+   "prod_url": "https://c3.ai/partners/c3-ai-aws-partnership/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/partners-c3-ai-aws-partnership.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
+      "HTTP 200, 723 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 885 text shingles, 40 imgs, 0 videos, 30 headings, 21 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json",
+      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-c3-ai-mckinsey-company",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/partners/c3-ai-mckinsey-company/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/partners-c3-ai-mckinsey-company.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 738 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 632 text shingles, 11 imgs, 0 videos, 7 headings, 11 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-googlecloud-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 58 assets, 0 failed, 0 residual leak(s), 8 prod-404]",
+   "prod_url": "https://c3.ai/partners/googlecloud-partnership/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/partners-googlecloud-partnership.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 736 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 725 text shingles, 30 imgs, 0 videos, 20 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/09/google-cloud-partnership-video-poster.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-microsoft-azure-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 90 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
+   "prod_url": "https://c3.ai/partners/microsoft-azure-partnership/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/partners-microsoft-azure-partnership.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
+      "HTTP 200, 736 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1408 text shingles, 93 imgs, 0 videos, 41 headings, 41 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json",
+      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/partners/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/partners.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 754 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 837 text shingles, 64 imgs, 0 videos, 41 headings, 26 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-agentic-ai-platform-c3-code",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-agentic-ai-platform/c3-code/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-agentic-ai-platform-c3-code.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 766 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1156 text shingles, 4 imgs, 1 videos, 13 headings, 3 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-applications",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-applications/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-applications.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 746 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 428 text shingles, 62 imgs, 0 videos, 14 headings, 29 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/07/reliability-demo-video-poster.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-asset-connect",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-asset-connect/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-asset-connect.png",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 752 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/357 shingles missing (4%). Largest:",
+      "    \u201cget in touch today first name last name work email schedule a briefing thank you for your\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-contested-logistics",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 46 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-contested-logistics/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-contested-logistics.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 762 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/306 shingles missing (4%). Largest:",
+      "    \u201chelps prevent warfighter disruptions first name last name work email meet with us thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-decision-advantage",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 54 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-decision-advantage/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-decision-advantage.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 736 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 373 text shingles, 21 imgs, 0 videos, 27 headings, 8 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-demand-forecasting",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "ORACLE-UNAVAILABLE",
+   "reason": "prod oracle HTTP 200 / redirected",
+   "prod_url": "https://c3.ai/products/c3-ai-demand-forecasting/",
+   "staging_url": "",
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": []
+  },
+  {
+   "id": "products-c3-ai-energy-management",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-energy-management/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-energy-management.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 735 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 17/334 shingles missing (5%). Largest:",
+      "    \u201cget in touch today first name last name email address please enter a business email address submit thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-esg",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 50 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-esg/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-esg.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 721 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 466 text shingles, 21 imgs, 0 videos, 22 headings, 10 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-field-services",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-field-services/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-field-services.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 732 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/410 shingles missing (3%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you for your\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-intelligence-analysis",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-intelligence-analysis/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-intelligence-analysis.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 739 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 373 text shingles, 18 imgs, 0 videos, 24 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-inventory-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-inventory-optimization/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-inventory-optimization.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 740 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/363 shingles missing (4%). Largest:",
+      "    \u201cwhile improving service levels first name last name work email meet with us thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-process-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-process-optimization/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-process-optimization.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 738 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 17/315 shingles missing (5%). Largest:",
+      "    \u201cget in touch today first name last name email address please enter a business email address submit thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-production-schedule-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-production-schedule-optimization/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-production-schedule-optimization.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 743 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/470 shingles missing (3%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you for your\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-property-appraisal",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-property-appraisal/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-property-appraisal.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 736 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 17/593 shingles missing (3%). Largest:",
+      "    \u201cguidance on next steps first name last name email address please enter a business email address submit thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/08/Ken.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-readiness",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-readiness/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-readiness.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 727 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/485 shingles missing (3%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-reliability",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-reliability/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-reliability.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 729 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/343 shingles missing (4%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/11/microsoft-slider-dow-scaled.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-sourcing-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-sourcing-optimization/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-sourcing-optimization.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 742 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/380 shingles missing (3%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you for your\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-supply-chain-orchestration",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-supply-chain-orchestration/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-supply-chain-orchestration.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 744 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/531 shingles missing (2%). Largest:",
+      "    \u201cget in touch today first name last name work email schedule a briefing thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-supply-network-risk",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-c3-ai-supply-network-risk.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 737 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 13/408 shingles missing (3%). Largest:",
+      "    \u201cget in touch today first name last name work email meet with us thank you we will\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-charm",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL); C6:flag(FLAG)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/products/charm/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/products-charm.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 717 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 38/734 shingles missing (5%). Largest:",
+      "    \u201cconnections get early access first name last name work email company name job title phone number we d love to know what \u2026\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:3(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 40, 'w': 1440, 'h': 0}",
+      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': 1553, 'w': 1112, 'h': 0}",
+      "  - [geo] div.grid-container>div.grid-x.grid-padding-x>div.cell>div \u2014 collapsed to zero height while holding text  rect={'x': 585, 'y': 5183, 'w': 347, 'h': 0}"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sip",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "prod_url": "https://c3.ai/sip/",
+   "staging_url": "",
+   "migrated_shot": "shots/standalone/sip.webp",
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 750 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "FAIL",
+     "defect_code": "CONTENT_LOSS",
+     "evidence": [
+      "TEXT loss (FAIL): 1 dropped run(s), 20/264 shingles missing (8%). Largest:",
+      "    \u201cagencies partner with us first name last name email please enter a business email address company connect with our team thank you \u2026\u201d"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    }
+   ]
+  }
+ ]
+}
