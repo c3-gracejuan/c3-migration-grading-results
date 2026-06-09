@@ -36,20 +36,18 @@
     if (dataset === "standalone") {
       return `<div class="intro">
         <p><b>The 47 priority product pages.</b> Each was migrated from the live c3.ai
-        page it must reproduce, then graded. Click <b>↗ Live prod</b> to open the real
-        page; the migrated render is shown as a screenshot below each card (these pages
-        aren't deployed to a public URL yet, so there's no live migrated link).</p>
-        <div class="note">Migrated product pages live only on a local dev server, so the
-        screenshot is the migrated artifact here. Verdicts grade the migrated render
-        against live prod.</div>
+        page it must reproduce, then graded. Click <b>↗ Live prod</b> and <b>↗ Migrated</b>
+        to open the two pages and compare them side by side.</p>
+        <div class="note">The migrated links require the Vercel visitor password — ask Grace.
+        A few pages whose migrated deploy currently errors (5xx) are marked on the card.</div>
       </div>`;
     }
     return `<div class="intro">
       <p><b>The re-skinned collection tail.</b> Blog / news / case-study pages, deliberately
       restyled. Graded on <b>content coverage</b> — everything live on prod must survive into
-      the migration. Click <b>↗ Live prod</b> and <b>↗ Migrated staging</b> to compare the two
+      the migration. Click <b>↗ Live prod</b> and <b>↗ Migrated</b> to compare the two
       live pages side by side.</p>
-      <div class="note">The migrated staging links sit behind a Vercel visitor password
+      <div class="note">The migrated links sit behind a Vercel visitor password
       — ask Grace for it (shared separately, not published here).</div>
     </div>`;
   }
@@ -95,11 +93,13 @@
     const prod = r.prod_url
       ? `<a class="openbtn prod" href="${esc(r.prod_url)}" target="_blank" rel="noopener">↗ Live prod</a>` : "";
     const mig = r.staging_url
-      ? `<a class="openbtn mig" href="${esc(r.staging_url)}" target="_blank" rel="noopener">↗ Migrated staging</a>`
-      : `<span class="openbtn mig dead">migrated render below ↓</span>`;
-    const note = (dataset === "collection" && r.staging_url)
-      ? `<div class="linknote">staging needs the Vercel visitor password (ask Grace)</div>` : "";
-    return `<div class="openlinks">${prod}${mig}</div>${note}`;
+      ? `<a class="openbtn mig" href="${esc(r.staging_url)}" target="_blank" rel="noopener">↗ Migrated</a>`
+      : `<span class="openbtn mig dead">migrated not available</span>`;
+    const errNote = (r.staging_url && r.staging_ok === false)
+      ? `<div class="linknote">⚠ migrated deploy currently returns a 5xx error</div>` : "";
+    const pwNote = r.staging_url
+      ? `<div class="linknote">migrated link needs the Vercel visitor password (ask Grace)</div>` : "";
+    return `<div class="openlinks">${prod}${mig}</div>${errNote}${pwNote}`;
   }
 
   function shotHTML(label, url) {
