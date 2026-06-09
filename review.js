@@ -39,7 +39,7 @@
         page it must reproduce, then graded. Click <b>↗ Live prod</b> and <b>↗ Migrated</b>
         to open the two pages and compare them side by side.</p>
         <div class="note">The migrated links require the Vercel visitor password — ask Grace.
-        A few pages whose migrated deploy currently errors (5xx) are marked on the card.</div>
+        Pages not yet deployed show the prod link only and are marked "not yet deployed".</div>
       </div>`;
     }
     return `<div class="intro">
@@ -92,14 +92,18 @@
   function linksHTML(r) {
     const prod = r.prod_url
       ? `<a class="openbtn prod" href="${esc(r.prod_url)}" target="_blank" rel="noopener">↗ Live prod</a>` : "";
-    const mig = r.staging_url
-      ? `<a class="openbtn mig" href="${esc(r.staging_url)}" target="_blank" rel="noopener">↗ Migrated</a>`
-      : `<span class="openbtn mig dead">migrated not available</span>`;
-    const errNote = (r.staging_url && r.staging_ok === false)
-      ? `<div class="linknote">⚠ migrated deploy currently returns a 5xx error</div>` : "";
-    const pwNote = r.staging_url
-      ? `<div class="linknote">migrated link needs the Vercel visitor password (ask Grace)</div>` : "";
-    return `<div class="openlinks">${prod}${mig}</div>${errNote}${pwNote}`;
+    // staging_ok === false => product page not yet deployed (don't show a dead link).
+    // undefined (collection) or true (deployed product page) => real migrated link.
+    let mig, pwNote = "";
+    if (r.staging_url && r.staging_ok !== false) {
+      mig = `<a class="openbtn mig" href="${esc(r.staging_url)}" target="_blank" rel="noopener">↗ Migrated</a>`;
+      pwNote = `<div class="linknote">migrated link needs the Vercel visitor password (ask Grace)</div>`;
+    } else if (r.staging_url && r.staging_ok === false) {
+      mig = `<span class="openbtn mig dead">migrated — not yet deployed</span>`;
+    } else {
+      mig = `<span class="openbtn mig dead">migrated not available</span>`;
+    }
+    return `<div class="openlinks">${prod}${mig}</div>${pwNote}`;
   }
 
   function shotHTML(label, url) {
