@@ -2,27 +2,23 @@
  "rollup": {
   "n": 47,
   "dist": {
-   "FLAG-HUMAN": 10,
+   "FLAG-HUMAN": 2,
    "ORACLE-UNAVAILABLE": 2,
-   "PASS": 35
+   "PASS": 43
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 10
+    "product-page": 2
    },
    "ORACLE-UNAVAILABLE": {
     "product-page": 2
    },
    "PASS": {
-    "product-page": 35
+    "product-page": 43
    }
   },
-  "loss": {
-   "dropped body text (FAIL)": 9
-  },
-  "defects": {
-   "CONTENT_LOSS": 9
-  },
+  "loss": {},
+  "defects": {},
   "order": [
    "FLAG-HUMAN",
    "NEEDS-FIX",
@@ -87,8 +83,8 @@
    "id": "c3-agentic-ai-websites",
    "family": "agentic-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 41 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 41 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/c3-agentic-ai-websites/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-agentic-ai-websites",
    "staging_ok": false,
@@ -107,11 +103,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 13/557 shingles missing (2%). Largest:",
-      "    \u201c30 day free trial first name last name work email schedule a briefing thank you a product\u201d"
+      "prod \u2286 migrated (strict): all 557 text shingles, 12 imgs, 1 videos, 13 headings, 7 links covered"
      ]
     },
     {
@@ -241,8 +236,8 @@
    "id": "c3-ai-initial-production-deployment",
    "family": "company/other",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 57 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 57 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/c3-ai-initial-production-deployment/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-ai-initial-production-deployment",
    "staging_ok": false,
@@ -261,12 +256,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 2 dropped run(s), 38/627 shingles missing (6%). Largest:",
-      "    \u201cstarted with c3 ai first name last name email please enter a business email address company request a briefing thank you we \u2026\u201d",
-      "    \u201centerprise ai starts here first name last name email please enter a business email address company request a briefing thank you we \u2026\u201d"
+      "prod \u2286 migrated (strict): all 627 text shingles, 50 imgs, 0 videos, 38 headings, 6 links covered"
      ]
     },
     {
@@ -520,7 +513,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 4216 text shingles, 132 imgs, 0 videos, 224 headings, 2 links covered"
+      "prod \u2286 migrated (strict): all 3944 text shingles, 124 imgs, 0 videos, 208 headings, 2 links covered"
      ]
     },
     {
@@ -943,8 +936,8 @@
       "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 0, 'w': 1440, 'h': 0}",
       "  - [geo] div.swiper-slide>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -150, 'y': -15, 'w': 1740, 'h': 770}",
       "  - [geo] div.swiper-slide.swiper-slide-visible>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -1689, 'y': -15, 'w': 4818, 'h': 770}",
-      "  - [geo] div.grid-x.grid-margin-y>div.cell.large-4>div.wrapper>div.c3-horizon-card--info \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 3727, 'w': 160, 'h': 399}",
-      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3771, 'w': 96, 'h': 270}"
+      "  - [geo] div.grid-x.grid-margin-y>div.cell.large-4>div.wrapper>div.c3-horizon-card--info \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 3361, 'w': 160, 'h': 399}",
+      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3405, 'w': 96, 'h': 270}"
      ]
     }
    ]
@@ -1080,7 +1073,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chat.json' from origin 'http://loca",
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
       "HTTP 200, 723 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1472,8 +1465,8 @@
    "id": "products-c3-ai-contested-logistics",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 46 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 46 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-contested-logistics/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-contested-logistics",
    "staging_ok": false,
@@ -1492,11 +1485,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 13/306 shingles missing (4%). Largest:",
-      "    \u201chelps prevent warfighter disruptions first name last name work email meet with us thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 306 text shingles, 11 imgs, 0 videos, 14 headings, 6 links covered"
      ]
     },
     {
@@ -1514,7 +1506,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1586,8 +1578,8 @@
    "id": "products-c3-ai-energy-management",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-energy-management/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-energy-management",
    "staging_ok": false,
@@ -1606,11 +1598,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 17/334 shingles missing (5%). Largest:",
-      "    \u201cget in touch today first name last name email address please enter a business email address submit thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 334 text shingles, 7 imgs, 0 videos, 11 headings, 5 links covered"
      ]
     },
     {
@@ -1628,7 +1619,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1937,8 +1928,8 @@
    "id": "products-c3-ai-property-appraisal",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-property-appraisal/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-property-appraisal",
    "staging_ok": false,
@@ -1957,11 +1948,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 17/593 shingles missing (3%). Largest:",
-      "    \u201cguidance on next steps first name last name email address please enter a business email address submit thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 593 text shingles, 8 imgs, 0 videos, 17 headings, 5 links covered"
      ]
     },
     {
@@ -1980,7 +1970,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1989,8 +1979,8 @@
    "id": "products-c3-ai-readiness",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-readiness/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-readiness",
    "staging_ok": false,
@@ -2009,11 +1999,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 13/485 shingles missing (3%). Largest:",
-      "    \u201cget in touch today first name last name work email meet with us thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 485 text shingles, 15 imgs, 0 videos, 12 headings, 7 links covered"
      ]
     },
     {
@@ -2031,7 +2020,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -2141,8 +2130,8 @@
    "id": "products-c3-ai-supply-chain-orchestration",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-chain-orchestration/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-supply-chain-orchestration",
    "staging_ok": false,
@@ -2161,11 +2150,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 13/531 shingles missing (2%). Largest:",
-      "    \u201cget in touch today first name last name work email schedule a briefing thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 531 text shingles, 1 imgs, 1 videos, 8 headings, 4 links covered"
      ]
     },
     {
@@ -2183,7 +2171,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -2192,8 +2180,8 @@
    "id": "products-c3-ai-supply-network-risk",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL)  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-supply-network-risk",
    "staging_ok": false,
@@ -2212,11 +2200,10 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 13/408 shingles missing (3%). Largest:",
-      "    \u201cget in touch today first name last name work email meet with us thank you we will\u201d"
+      "prod \u2286 migrated (strict): all 408 text shingles, 6 imgs, 0 videos, 14 headings, 4 links covered"
      ]
     },
     {
@@ -2234,7 +2221,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -2244,7 +2231,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "FLAG-HUMAN",
-   "reason": "C2:CONTENT_LOSS(FAIL); C6:flag(FLAG)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/charm/",
    "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-charm",
    "staging_ok": false,
@@ -2263,11 +2250,11 @@
     {
      "id": "C2",
      "name": "content coverage",
-     "verdict": "FAIL",
-     "defect_code": "CONTENT_LOSS",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "TEXT loss (FAIL): 1 dropped run(s), 38/734 shingles missing (5%). Largest:",
-      "    \u201cconnections get early access first name last name work email company name job title phone number we d love to know what \u2026\u201d"
+      "text: 8/734 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
+      "prod \u2286 migrated (strict): all 734 text shingles, 7 imgs, 0 videos, 20 headings, 5 links covered"
      ]
     },
     {
@@ -2285,10 +2272,9 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:3(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
       "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 40, 'w': 1440, 'h': 0}",
-      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': 1553, 'w': 1112, 'h': 0}",
-      "  - [geo] div.grid-container>div.grid-x.grid-padding-x>div.cell>div \u2014 collapsed to zero height while holding text  rect={'x': 585, 'y': 5183, 'w': 347, 'h': 0}"
+      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': 1553, 'w': 1112, 'h': 0}"
      ]
     }
    ]
