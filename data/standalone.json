@@ -36,7 +36,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 55 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/c3-agentic-ai-platform/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-agentic-ai-platform",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-agentic-ai-platform",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -86,8 +86,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 41 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/c3-agentic-ai-websites/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-agentic-ai-websites",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-agentic-ai-websites",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -115,8 +115,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/GettyImages-1291999161-1.mp4",
-      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -137,7 +136,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/c3-ai-apa/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-ai-apa",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-ai-apa",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -166,8 +165,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
-      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -188,8 +186,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/c3-ai-fellows/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-ai-fellows",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-ai-fellows",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -217,8 +215,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2020/08/play-button.svg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -239,8 +236,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 57 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/c3-ai-initial-production-deployment/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-ai-initial-production-deployment",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-ai-initial-production-deployment",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -289,7 +286,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 55 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/c3-generative-ai/customers/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-generative-ai-customers",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-generative-ai-customers",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -318,8 +315,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 6 prod-404 ref(s) (broken on prod too): /wp-content/uploads/2023/08/c3-generative-ai-overview-large.svg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (6 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -340,7 +336,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/c3-generative-ai-for-sales/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-generative-ai-for-sales",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-generative-ai-for-sales",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -369,8 +365,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
-      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -391,7 +386,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 60 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/c3-generative-ai/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-generative-ai",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-generative-ai",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -420,8 +415,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/03/gai-orchestrate-scaled.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -442,7 +436,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 47 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/c3-generative-marketing/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/c3-generative-marketing",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/c3-generative-marketing",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -471,8 +465,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/06/website-chat-tab.png",
-      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -493,7 +486,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 76 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/careers/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/careers",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/careers",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -543,7 +536,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 60 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/company/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/company",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/company",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -593,7 +586,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 35 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/contact-us/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/contact-us",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/contact-us",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -643,7 +636,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-defense/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-enterprise-ai-for-defense",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-enterprise-ai-for-defense",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -672,8 +665,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2022/05/Panda-rso.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -694,7 +686,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-government/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-enterprise-ai-for-government",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-enterprise-ai-for-government",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -744,7 +736,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-manufacturing/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-enterprise-ai-for-manufacturing",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-enterprise-ai-for-manufacturing",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -794,7 +786,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 33 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-oil-and-gas/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-enterprise-ai-for-oil-and-gas",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-enterprise-ai-for-oil-and-gas",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -844,7 +836,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-utilities/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-enterprise-ai-for-utilities",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-enterprise-ai-for-utilities",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -894,8 +886,8 @@
    "verdict": "FLAG-HUMAN",
    "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/healthcare-industry/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-healthcare-industry",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-healthcare-industry",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -949,8 +941,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/maritime/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/industries-maritime",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/industries-maritime",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -999,7 +991,7 @@
    "verdict": "ORACLE-UNAVAILABLE",
    "reason": "prod fetch failed: TimeoutError('The read operation timed out')",
    "prod_url": "https://c3.ai/investors/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/investors",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/investors",
    "staging_ok": false,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1012,7 +1004,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/leadership/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/leadership",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/leadership",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1062,7 +1054,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
    "prod_url": "https://c3.ai/partners/c3-ai-aws-partnership/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/partners-c3-ai-aws-partnership",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/partners-c3-ai-aws-partnership",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1092,8 +1084,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json",
-      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -1114,7 +1105,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/partners/c3-ai-mckinsey-company/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/partners-c3-ai-mckinsey-company",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/partners-c3-ai-mckinsey-company",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1164,7 +1155,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 58 assets, 0 failed, 0 residual leak(s), 8 prod-404]",
    "prod_url": "https://c3.ai/partners/googlecloud-partnership/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/partners-googlecloud-partnership",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/partners-googlecloud-partnership",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1193,8 +1184,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/09/google-cloud-partnership-video-poster.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -1215,7 +1205,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 90 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
    "prod_url": "https://c3.ai/partners/microsoft-azure-partnership/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/partners-microsoft-azure-partnership",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/partners-microsoft-azure-partnership",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1245,8 +1235,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 5 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json",
-      "self-contained: no un-localized c3.ai/wp asset leaks (5 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -1267,7 +1256,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/partners/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/partners",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/partners",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1317,7 +1306,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-agentic-ai-platform/c3-code/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-agentic-ai-platform-c3-code",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-agentic-ai-platform-c3-code",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1367,7 +1356,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-applications/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-applications",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-applications",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1396,8 +1385,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/07/reliability-demo-video-poster.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -1418,8 +1406,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-asset-connect/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-asset-connect",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-asset-connect",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1468,8 +1456,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 46 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-contested-logistics/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-contested-logistics",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-contested-logistics",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1518,7 +1506,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 54 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-decision-advantage/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-decision-advantage",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-decision-advantage",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1568,8 +1556,8 @@
    "verdict": "ORACLE-UNAVAILABLE",
    "reason": "prod oracle HTTP 200 / redirected",
    "prod_url": "https://c3.ai/products/c3-ai-demand-forecasting/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-demand-forecasting",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-demand-forecasting",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": []
@@ -1581,8 +1569,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-energy-management/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-energy-management",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-energy-management",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1631,7 +1619,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 50 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-esg/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-esg",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-esg",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1681,8 +1669,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-field-services/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-field-services",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-field-services",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1731,7 +1719,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-intelligence-analysis/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-intelligence-analysis",
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-intelligence-analysis",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
@@ -1781,8 +1769,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-inventory-optimization/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-inventory-optimization",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-inventory-optimization",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1831,8 +1819,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-process-optimization/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-process-optimization",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-process-optimization",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1881,8 +1869,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-production-schedule-optimization/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-production-schedule-optimization",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-production-schedule-optimization",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1931,8 +1919,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-property-appraisal/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-property-appraisal",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-property-appraisal",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -1960,8 +1948,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/08/Ken.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -1982,8 +1969,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-readiness/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-readiness",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-readiness",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2032,8 +2019,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-reliability/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-reliability",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-reliability",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2061,8 +2048,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/11/microsoft-slider-dow-scaled.jpg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
      ]
     },
     {
@@ -2083,8 +2069,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-sourcing-optimization/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-sourcing-optimization",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-sourcing-optimization",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2133,8 +2119,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 44 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-chain-orchestration/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-supply-chain-orchestration",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-supply-chain-orchestration",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2183,8 +2169,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-c3-ai-supply-network-risk",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-c3-ai-supply-network-risk",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2233,8 +2219,8 @@
    "verdict": "FLAG-HUMAN",
    "reason": "C6:flag(FLAG)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/charm/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/products-charm",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/products-charm",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2286,8 +2272,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/sip/",
-   "staging_url": "https://c3-payload-vercel-funymh3cu-c3-ai.vercel.app/products/sip",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-kuolcspat-c3-ai.vercel.app/products/sip",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
