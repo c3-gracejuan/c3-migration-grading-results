@@ -2,23 +2,25 @@
  "rollup": {
   "n": 47,
   "dist": {
-   "FLAG-HUMAN": 2,
+   "FLAG-HUMAN": 1,
    "ORACLE-UNAVAILABLE": 2,
-   "PASS": 43
+   "PASS": 44
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 2
+    "product-page": 1
    },
    "ORACLE-UNAVAILABLE": {
     "product-page": 2
    },
    "PASS": {
-    "product-page": 43
+    "product-page": 44
    }
   },
   "loss": {},
-  "defects": {},
+  "defects": {
+   "VISUAL_DELTA": 4
+  },
   "order": [
    "FLAG-HUMAN",
    "NEEDS-FIX",
@@ -66,6 +68,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 235 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -119,6 +130,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -166,6 +186,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 72 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -219,6 +248,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 139 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -269,6 +307,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 226 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -306,7 +353,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 446 text shingles, 26 imgs, 0 videos, 16 headings, 38 links covered"
+      "prod \u2286 migrated (strict): all 354 text shingles, 26 imgs, 0 videos, 16 headings, 38 links covered"
      ]
     },
     {
@@ -319,12 +366,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 154 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -366,6 +422,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 72 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -419,6 +484,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 208 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -466,6 +540,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 74 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -519,6 +602,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 521 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -566,6 +658,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 194 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -619,6 +720,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 94 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -634,7 +744,7 @@
    "family": "industries",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-defense/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-defense",
    "staging_ok": true,
@@ -656,7 +766,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 548 text shingles, 105 imgs, 0 videos, 51 headings, 16 links covered"
+      "prod \u2286 migrated (strict): all 526 text shingles, 105 imgs, 0 videos, 51 headings, 16 links covered"
      ]
     },
     {
@@ -669,12 +779,22 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
+     "evidence": [
+      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 291 matched node pairs (match_rate 100%); deltas: rect:gap_collapse\u00d71",
+      "    rect:gap_collapse: \"gap 79px\" \u2192 \"gap -2px\"  @ div#related-resources>section.section.section-featured>div.grid-container>div.inner-content.grid-x>div.cell.is-visible>div.c3-horizon-card.post-wrapper>a.c3-horizon-card--link"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -706,7 +826,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 510 text shingles, 19 imgs, 0 videos, 15 headings, 9 links covered"
+      "prod \u2286 migrated (strict): all 464 text shingles, 19 imgs, 0 videos, 15 headings, 9 links covered"
      ]
     },
     {
@@ -719,12 +839,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 144 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -734,7 +863,7 @@
    "family": "industries",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-manufacturing/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-manufacturing",
    "staging_ok": true,
@@ -756,7 +885,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 576 text shingles, 25 imgs, 0 videos, 19 headings, 12 links covered"
+      "prod \u2286 migrated (strict): all 512 text shingles, 25 imgs, 0 videos, 19 headings, 12 links covered"
      ]
     },
     {
@@ -769,12 +898,26 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 182 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:14(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 1525, 'w': 1112, 'h': 400}",
+      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid \u2014 overflows the viewport's right edge  rect={'x': 1508, 'y': 1565, 'w': 920, 'h': 320}",
+      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>img.imgcol \u2014 overflows the viewport's right edge  rect={'x': 1565, 'y': 1642, 'w': 166, 'h': 166}",
+      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>h2 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1565, 'w': 600, 'h': 17}",
+      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>h3 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1623, 'w': 600, 'h': 36}"
      ]
     }
    ]
@@ -819,6 +962,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 14 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -834,7 +986,7 @@
    "family": "industries",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-utilities/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-utilities",
    "staging_ok": true,
@@ -856,7 +1008,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 433 text shingles, 22 imgs, 0 videos, 16 headings, 12 links covered"
+      "prod \u2286 migrated (strict): all 401 text shingles, 22 imgs, 0 videos, 16 headings, 12 links covered"
      ]
     },
     {
@@ -869,12 +1021,26 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 144 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:12(\u22651?True)",
+      "  - [overlap] div#slick-slide01>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 64px vert \u00d7 498px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='deploying enterprise data analytics and ami operations'",
+      "  - [overlap] div#slick-slide02>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 20px vert \u00d7 507px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='enterprise ai for commercial energy management'",
+      "  - [overlap] div#slick-slide00>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <img> by 6px vert \u00d7 154px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='realizing global 100 enterprise-wide digital transformation'",
+      "  - [overlap] div#slick-slide03>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 48px vert \u00d7 481px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='predictive maintenance for electric grid'",
+      "  - [overlap] div#slick-slide01>div.grid-x.grid-margin-x>div.cell.large-6>p \u2014 content visually overlaps another in-flow element  overlaps <p> by 39px vert \u00d7 487px horiz  (other: 'enterprise-wide digital transformation o')  text='smart meter analytics for more than 5 million smart meters to improve customer s'"
      ]
     }
    ]
@@ -883,8 +1049,8 @@
    "id": "industries-healthcare-industry",
    "family": "industries",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/industries/healthcare-industry/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-healthcare-industry",
    "staging_ok": true,
@@ -906,7 +1072,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 667 text shingles, 69 imgs, 0 videos, 62 headings, 20 links covered"
+      "prod \u2286 migrated (strict): all 639 text shingles, 69 imgs, 0 videos, 62 headings, 20 links covered"
      ]
     },
     {
@@ -919,17 +1085,31 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 224 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:8(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 0, 'w': 1440, 'h': 0}",
+      "layout suspect \u2014 geometry:7(\u22652?True) near-invisible-text:0(\u22651?False) overlap:11(\u22651?True)",
       "  - [geo] div.swiper-slide>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -150, 'y': -15, 'w': 1740, 'h': 770}",
       "  - [geo] div.swiper-slide.swiper-slide-visible>div.grid>p>video.jquery-background-video \u2014 overflows the viewport's right edge  rect={'x': -1689, 'y': -15, 'w': 4818, 'h': 770}",
       "  - [geo] div.grid-x.grid-margin-y>div.cell.large-4>div.wrapper>div.c3-horizon-card--info \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 3361, 'w': 160, 'h': 399}",
-      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3405, 'w': 96, 'h': 270}"
+      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3405, 'w': 96, 'h': 270}",
+      "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>div.c3-horizon-card--category \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3705, 'w': 96, 'h': 23}",
+      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 40px vert \u00d7 630px horiz  (other: 'improving drug manufacturing reliability')  text='c3 agentic ai for payer claims review'",
+      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 52px vert \u00d7 623px horiz  (other: 'pharmaceutical company increases yield i')  text='c3 agentic ai for payer claims review'",
+      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <a> by 9px vert \u00d7 97px horiz  (other: 'learn more')  text='learn more'",
+      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'",
+      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-prev>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'"
      ]
     }
    ]
@@ -971,6 +1151,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 164 matched node pairs (match_rate 99%); deltas: none"
      ]
     },
     {
@@ -1037,6 +1226,16 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 78 matched node pairs (match_rate 100%); deltas: fontSize\u00d72, lineHeight\u00d72",
+      "    advisory (non-gating): 4 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1052,7 +1251,7 @@
    "family": "partners",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/partners/c3-ai-aws-partnership/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/partners-c3-ai-aws-partnership",
    "staging_ok": true,
@@ -1065,7 +1264,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chat.json' from origin 'http://loca",
       "HTTP 200, 723 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1088,12 +1287,26 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 199 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:16(\u22651?True)",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 34px vert \u00d7 132px horiz  (other: 'maximize mission capability with ai-driv')  text=''",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 15px vert \u00d7 174px horiz  (other: 'uncover intelligence insights with ai')  text=''",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 34px vert \u00d7 159px horiz  (other: 'accelerate decision-making cycles with a')  text=''",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 34px vert \u00d7 170px horiz  (other: 'enable resilient and adaptive supply net')  text=''",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 34px vert \u00d7 182px horiz  (other: 'efficient, accurate, and fair market val')  text=''"
      ]
     }
    ]
@@ -1138,6 +1351,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 70 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1175,7 +1397,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 725 text shingles, 30 imgs, 0 videos, 20 headings, 6 links covered"
+      "prod \u2286 migrated (strict): all 713 text shingles, 30 imgs, 0 videos, 20 headings, 6 links covered"
      ]
     },
     {
@@ -1188,12 +1410,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 117 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1202,8 +1433,8 @@
    "id": "partners-microsoft-azure-partnership",
    "family": "partners",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 90 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5:VISUAL_DELTA(FAIL); C6:flag(FLAG)  [extractor: 90 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
    "prod_url": "https://c3.ai/partners/microsoft-azure-partnership/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/partners-microsoft-azure-partnership",
    "staging_ok": true,
@@ -1239,12 +1470,28 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
+     "evidence": [
+      "VISUAL parity FAIL: 4 hard delta(s) vs prod (4 property, 0 geometric). 366 matched node pairs (match_rate 99%); deltas: textAlign\u00d7350, fontSize\u00d768, lineHeight\u00d768, color\u00d74, fontWeight\u00d71",
+      "    color: \"rgb(10, 10, 10)\" \u2192 \"rgb(255, 255, 255)\"  @ section#genai-apps>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>div.app",
+      "    color: \"rgb(10, 10, 10)\" \u2192 \"rgb(255, 255, 255)\"  @ section#genai-apps>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>div.app",
+      "    color: \"rgb(10, 10, 10)\" \u2192 \"rgb(255, 255, 255)\"  @ section#genai-apps>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>div.app",
+      "    color: \"rgb(10, 10, 10)\" \u2192 \"rgb(255, 255, 255)\"  @ section#genai-apps>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>div.app",
+      "    advisory (non-gating): 487 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
-     "verdict": "PASS",
+     "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:3(\u22651?True)",
+      "  - [overlap] div#supplychain-suite>ul>li>a>img \u2014 content visually overlaps another in-flow element  overlaps <span> by 6px vert \u00d7 99px horiz  (other: 'learn more')  text=''",
+      "  - [overlap] div#supplychain-suite>ul>li>a>div.excerpt>p \u2014 content visually overlaps another in-flow element  overlaps <span> by 5px vert \u00d7 99px horiz  (other: 'learn more')  text='improve sourcing decisions with ai insights and alerts'"
      ]
     }
    ]
@@ -1289,6 +1536,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 191 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1304,7 +1560,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-agentic-ai-platform/c3-code/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-agentic-ai-platform-c3-code",
    "staging_ok": true,
@@ -1339,12 +1595,24 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 399 matched node pairs (match_rate 100%); deltas: fontSize\u00d76, lineHeight\u00d76",
+      "    advisory (non-gating): 12 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:4(\u22651?True)",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>div.stats.section-dark>div.stats-inner>div.stat-col>div.stat-value \u2014 content visually overlaps another in-flow element  overlaps <div> by 13px vert \u00d7 36px horiz  (other: 'up to')  text='100x'",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>div.stats.section-dark>div.stats-inner>div.stat-col>div.stat-value \u2014 content visually overlaps another in-flow element  overlaps <div> by 13px vert \u00d7 71px horiz  (other: 'working in')  text='days'"
      ]
     }
    ]
@@ -1354,7 +1622,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-applications/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-applications",
    "staging_ok": true,
@@ -1389,12 +1657,27 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 234 matched node pairs (match_rate 100%); deltas: lineHeight\u00d713",
+      "    advisory (non-gating): 13 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:79(\u22651?True)",
+      "  - [overlap] div#asset-performance-suite>ul>li>a>div.excerpt>p \u2014 content visually overlaps another in-flow element  overlaps <img> by 32px vert \u00d7 127px horiz  (other: 'http://localhost:3000/assets/uploads/201')  text='prioritize and optimize asset maintenance and planning'",
+      "  - [overlap] div#asset-performance-suite>ul>li>a>div.excerpt>span \u2014 content visually overlaps another in-flow element  overlaps <img> by 15px vert \u00d7 99px horiz  (other: 'http://localhost:3000/assets/uploads/201')  text='learn more'",
+      "  - [overlap] img#imagesmall \u2014 content visually overlaps another in-flow element  overlaps <p> by 27px vert \u00d7 149px horiz  (other: 'increase production yield and process ef')  text=''",
+      "  - [overlap] div#asset-performance-suite>ul>li>a>div.excerpt>span \u2014 content visually overlaps another in-flow element  overlaps <img> by 15px vert \u00d7 99px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='learn more'",
+      "  - [overlap] div#asset-performance-suite>ul>li>a>div.excerpt>p \u2014 content visually overlaps another in-flow element  overlaps <img> by 32px vert \u00d7 144px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='reduce energy costs and improve building operations'"
      ]
     }
    ]
@@ -1404,7 +1687,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C5:VISUAL_DELTA(FAIL); C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-asset-connect/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-asset-connect",
    "staging_ok": true,
@@ -1439,12 +1722,32 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
+     "evidence": [
+      "VISUAL parity FAIL: 10 hard delta(s) vs prod (0 property, 10 geometric). 69 matched node pairs (match_rate 100%); deltas: rect:box_overlap\u00d710",
+      "    rect:box_overlap: \"gap 46px\" \u2192 \"overlap -72px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>p.c3-subtitle  \u00abunify and contextualize data in a standardized object model \u00bb",
+      "    rect:box_overlap: \"gap 548px\" \u2192 \"overlap -72px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black",
+      "    rect:box_overlap: \"gap 49px\" \u2192 \"overlap -36px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>p>a.c3-button  \u00abdownload data sheet\u00bb",
+      "    rect:box_overlap: \"gap 156px\" \u2192 \"overlap -12px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black",
+      "    rect:box_overlap: \"gap 46px\" \u2192 \"overlap -36px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>div.c3-text-wrapper>p.c3-subtitle  \u00abdiscover how c3 ai asset connect can help establish the digi\u00bb",
+      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -16px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>div.c3-text-wrapper>p.c3-subtitle  \u00abget in touch today.\u00bb"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
-     "verdict": "PASS",
+     "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:10(\u22651?True)",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>h2 \u2014 content visually overlaps another in-flow element  overlaps <img> by 36px vert \u00d7 335px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='set the foundation for ai'",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>p.c3-subtitle \u2014 content visually overlaps another in-flow element  overlaps <img> by 72px vert \u00d7 399px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='unify and contextualize data in a standardized object model optimized for machin'",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>h2 \u2014 content visually overlaps another in-flow element  overlaps <img> by 36px vert \u00d7 414px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='see the full list of capabilities'",
+      "  - [overlap] div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>form.mktoForm.mktoHasWidth>div.mktoButtonRow>span.mktoButtonWrap.mktoSimple>button.mktoButton \u2014 content visually overlaps another in-flow element  overlaps <img> by 20px vert \u00d7 131px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='schedule a briefing'",
+      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>p>a.c3-button \u2014 content visually overlaps another in-flow element  overlaps <h2> by 12px vert \u00d7 138px horiz  (other: 'see the full list of capabilities')  text='download data sheet'"
      ]
     }
    ]
@@ -1489,6 +1792,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 96 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1526,7 +1838,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 373 text shingles, 21 imgs, 0 videos, 27 headings, 8 links covered"
+      "prod \u2286 migrated (strict): all 365 text shingles, 21 imgs, 0 videos, 27 headings, 8 links covered"
      ]
     },
     {
@@ -1539,12 +1851,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 100 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1602,6 +1923,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1639,7 +1969,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 466 text shingles, 21 imgs, 0 videos, 22 headings, 10 links covered"
+      "prod \u2286 migrated (strict): all 458 text shingles, 21 imgs, 0 videos, 22 headings, 10 links covered"
      ]
     },
     {
@@ -1652,12 +1982,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 99 matched node pairs (match_rate 100%); deltas: lineHeight\u00d71"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1667,7 +2006,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-field-services/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-field-services",
    "staging_ok": true,
@@ -1699,6 +2038,16 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
+     "evidence": [
+      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 65 matched node pairs (match_rate 100%); deltas: rect:box_overlap\u00d71",
+      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -106px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-full>div.c3-container>div.c3-text-wrapper>p.c3-caption  \u00abdisclaimer: features and capabilities are still in developme\u00bb"
      ]
     },
     {
@@ -1739,7 +2088,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 373 text shingles, 18 imgs, 0 videos, 24 headings, 6 links covered"
+      "prod \u2286 migrated (strict): all 365 text shingles, 18 imgs, 0 videos, 24 headings, 6 links covered"
      ]
     },
     {
@@ -1752,12 +2101,21 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 91 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -1799,6 +2157,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 96 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -1852,6 +2219,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 86 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -1867,7 +2243,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-production-schedule-optimization/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-production-schedule-optimization",
    "staging_ok": true,
@@ -1902,12 +2278,23 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 106 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:3(\u22651?True)",
+      "  - [overlap] section#optimize-performance>div.c3-container>div.c3-media-wrapper>div.video-container.scale-up>video \u2014 content visually overlaps another in-flow element  overlaps <h2> by 29px vert \u00d7 364px horiz  (other: 'optimize performance with advanced ai')  text=''",
+      "  - [overlap] section#optimize-performance>div.c3-container>div.c3-media-wrapper>div.video-container.scale-up>video \u2014 content visually overlaps another in-flow element  overlaps <p> by 29px vert \u00d7 399px horiz  (other: 'leverage ai optimization that accounts f')  text=''"
      ]
     }
    ]
@@ -1917,7 +2304,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-property-appraisal/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-property-appraisal",
    "staging_ok": true,
@@ -1952,12 +2339,22 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 126 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:2(\u22651?True)",
+      "  - [overlap] section#signup>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>form.mktoForm.mktoHasWidth>div.mktoButtonRow>span.mktoButtonWrap.mktoSimple>button.mktoButton \u2014 content visually overlaps another in-flow element  overlaps <img> by 21px vert \u00d7 61px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='submit'"
      ]
     }
    ]
@@ -1999,6 +2396,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 110 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -2052,6 +2458,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 91 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -2099,6 +2514,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 87 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -2152,6 +2576,15 @@
      ]
     },
     {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 81 matched node pairs (match_rate 100%); deltas: none"
+     ]
+    },
+    {
      "id": "C6",
      "name": "layout sanity",
      "verdict": "PASS",
@@ -2167,7 +2600,7 @@
    "family": "products",
    "status": "product-page",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "C6:flag(FLAG)  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-supply-network-risk",
    "staging_ok": true,
@@ -2202,12 +2635,24 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
+     "id": "C5",
+     "name": "visual parity",
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: lineHeight\u00d74",
+      "    advisory (non-gating): 4 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': 8779, 'w': 288, 'h': 58}",
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': 8726, 'w': 288, 'h': 58}"
      ]
     }
    ]
@@ -2216,8 +2661,8 @@
    "id": "products-charm",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C6:flag(FLAG)  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "verdict": "PASS",
+   "reason": "all required critics pass  [extractor: 39 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/charm/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-charm",
    "staging_ok": true,
@@ -2239,8 +2684,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "text: 8/734 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
-      "prod \u2286 migrated (strict): all 734 text shingles, 7 imgs, 0 videos, 20 headings, 5 links covered"
+      "text: 8/718 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
+      "prod \u2286 migrated (strict): all 718 text shingles, 7 imgs, 0 videos, 20 headings, 5 links covered"
      ]
     },
     {
@@ -2253,14 +2698,22 @@
      ]
     },
     {
-     "id": "C6",
-     "name": "layout sanity",
-     "verdict": "FLAG",
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] body.up>div.off-canvas-content>div.content.has-fixed-sidemenu>div.menu-position-wrapper \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 40, 'w': 1440, 'h': 0}",
-      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': 1553, 'w': 1112, 'h': 0}"
+      "visual parity vs prod: no hard deltas. 236 matched node pairs (match_rate 96%); deltas: fontSize\u00d72, lineHeight\u00d72",
+      "    advisory (non-gating): 4 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
      ]
     }
    ]
@@ -2302,6 +2755,15 @@
      "defect_code": null,
      "evidence": [
       "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 69 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
