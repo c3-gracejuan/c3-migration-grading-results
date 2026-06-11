@@ -2,24 +2,24 @@
  "rollup": {
   "n": 47,
   "dist": {
-   "FLAG-HUMAN": 1,
+   "FLAG-HUMAN": 13,
    "ORACLE-UNAVAILABLE": 2,
-   "PASS": 44
+   "PASS": 32
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 1
+    "product-page": 13
    },
    "ORACLE-UNAVAILABLE": {
     "product-page": 2
    },
    "PASS": {
-    "product-page": 44
+    "product-page": 32
    }
   },
   "loss": {},
   "defects": {
-   "VISUAL_DELTA": 4
+   "VISUAL_DELTA": 3
   },
   "order": [
    "FLAG-HUMAN",
@@ -743,8 +743,8 @@
    "id": "industries-enterprise-ai-for-defense",
    "family": "industries",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 129 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-defense/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-defense",
    "staging_ok": true,
@@ -862,8 +862,8 @@
    "id": "industries-enterprise-ai-for-manufacturing",
    "family": "industries",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 56 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-manufacturing/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-manufacturing",
    "staging_ok": true,
@@ -913,11 +913,11 @@
      "defect_code": null,
      "evidence": [
       "layout suspect \u2014 geometry:14(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 1525, 'w': 1112, 'h': 400}",
-      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid \u2014 overflows the viewport's right edge  rect={'x': 1508, 'y': 1565, 'w': 920, 'h': 320}",
-      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>img.imgcol \u2014 overflows the viewport's right edge  rect={'x': 1565, 'y': 1642, 'w': 166, 'h': 166}",
-      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>h2 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1565, 'w': 600, 'h': 17}",
-      "  - [geo] div#swiper-wrapper-4be95ce610ba19b64>div.swiper-slide.swiper-slide-visible>div.grid>h3 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1623, 'w': 600, 'h': 36}"
+      "  - [geo] div#swiper-wrapper-81cffdff76bd4710f>div.swiper-slide.swiper-slide-visible \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 1525, 'w': 1112, 'h': 400}",
+      "  - [geo] div#swiper-wrapper-81cffdff76bd4710f>div.swiper-slide.swiper-slide-visible>div.grid \u2014 overflows the viewport's right edge  rect={'x': 1508, 'y': 1565, 'w': 920, 'h': 320}",
+      "  - [geo] div#swiper-wrapper-81cffdff76bd4710f>div.swiper-slide.swiper-slide-visible>div.grid>img.imgcol \u2014 overflows the viewport's right edge  rect={'x': 1565, 'y': 1642, 'w': 166, 'h': 166}",
+      "  - [geo] div#swiper-wrapper-81cffdff76bd4710f>div.swiper-slide.swiper-slide-visible>div.grid>h2 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1565, 'w': 600, 'h': 17}",
+      "  - [geo] div#swiper-wrapper-81cffdff76bd4710f>div.swiper-slide.swiper-slide-visible>div.grid>h3 \u2014 overflows the viewport's right edge  rect={'x': 1828, 'y': 1623, 'w': 600, 'h': 36}"
      ]
     }
    ]
@@ -985,8 +985,8 @@
    "id": "industries-enterprise-ai-for-utilities",
    "family": "industries",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 52 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/enterprise-ai-for-utilities/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-enterprise-ai-for-utilities",
    "staging_ok": true,
@@ -1049,8 +1049,8 @@
    "id": "industries-healthcare-industry",
    "family": "industries",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 92 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/industries/healthcare-industry/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/industries-healthcare-industry",
    "staging_ok": true,
@@ -1105,11 +1105,11 @@
       "  - [geo] div.grid-x.grid-margin-y>div.cell.large-4>div.wrapper>div.c3-horizon-card--info \u2014 overflows the viewport's right edge  rect={'x': 1412, 'y': 3361, 'w': 160, 'h': 399}",
       "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>h4.c3-horizon-card--title \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3405, 'w': 96, 'h': 270}",
       "  - [geo] div.cell.large-4>div.wrapper>div.c3-horizon-card--info>div.c3-horizon-card--category \u2014 overflows the viewport's right edge  rect={'x': 1444, 'y': 3705, 'w': 96, 'h': 23}",
-      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 40px vert \u00d7 630px horiz  (other: 'improving drug manufacturing reliability')  text='c3 agentic ai for payer claims review'",
-      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 52px vert \u00d7 623px horiz  (other: 'pharmaceutical company increases yield i')  text='c3 agentic ai for payer claims review'",
-      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <a> by 9px vert \u00d7 97px horiz  (other: 'learn more')  text='learn more'",
-      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'",
-      "  - [overlap] div#swiper-wrapper-27ee2600a44c7d2a>div.swiper-slide.swiper-slide-prev>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'"
+      "  - [overlap] div#swiper-wrapper-ff7cbc497ed793e7>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 40px vert \u00d7 630px horiz  (other: 'improving drug manufacturing reliability')  text='c3 agentic ai for payer claims review'",
+      "  - [overlap] div#swiper-wrapper-ff7cbc497ed793e7>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>h2 \u2014 content visually overlaps another in-flow element  overlaps <h2> by 52px vert \u00d7 623px horiz  (other: 'pharmaceutical company increases yield i')  text='c3 agentic ai for payer claims review'",
+      "  - [overlap] div#swiper-wrapper-ff7cbc497ed793e7>div.swiper-slide.swiper-slide-next>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <a> by 9px vert \u00d7 97px horiz  (other: 'learn more')  text='learn more'",
+      "  - [overlap] div#swiper-wrapper-ff7cbc497ed793e7>div.swiper-slide>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'",
+      "  - [overlap] div#swiper-wrapper-ff7cbc497ed793e7>div.swiper-slide.swiper-slide-prev>div.grid>div.c3-hero-video-info>p>a.button.hollow \u2014 content visually overlaps another in-flow element  overlaps <h2> by 9px vert \u00d7 97px horiz  (other: 'pharmaceutical company increases yield i')  text='learn more'"
      ]
     }
    ]
@@ -1250,8 +1250,8 @@
    "id": "partners-c3-ai-aws-partnership",
    "family": "partners",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 61 assets, 0 failed, 0 residual leak(s), 7 prod-404]",
    "prod_url": "https://c3.ai/partners/c3-ai-aws-partnership/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/partners-c3-ai-aws-partnership",
    "staging_ok": true,
@@ -1264,7 +1264,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chat.json' from origin 'http://loca",
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
       "HTTP 200, 723 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1447,7 +1447,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chat.json' from origin 'http://loca",
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
       "HTTP 200, 736 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1559,8 +1559,8 @@
    "id": "products-c3-agentic-ai-platform-c3-code",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-agentic-ai-platform/c3-code/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-agentic-ai-platform-c3-code",
    "staging_ok": true,
@@ -1621,8 +1621,8 @@
    "id": "products-c3-ai-applications",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 67 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-applications/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-applications",
    "staging_ok": true,
@@ -1686,8 +1686,8 @@
    "id": "products-c3-ai-asset-connect",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C5:VISUAL_DELTA(FAIL); C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-asset-connect/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-asset-connect",
    "staging_ok": true,
@@ -1724,16 +1724,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 10 hard delta(s) vs prod (0 property, 10 geometric). 69 matched node pairs (match_rate 100%); deltas: rect:box_overlap\u00d710",
-      "    rect:box_overlap: \"gap 46px\" \u2192 \"overlap -72px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>p.c3-subtitle  \u00abunify and contextualize data in a standardized object model \u00bb",
-      "    rect:box_overlap: \"gap 548px\" \u2192 \"overlap -72px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black",
-      "    rect:box_overlap: \"gap 49px\" \u2192 \"overlap -36px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>p>a.c3-button  \u00abdownload data sheet\u00bb",
-      "    rect:box_overlap: \"gap 156px\" \u2192 \"overlap -12px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black",
-      "    rect:box_overlap: \"gap 46px\" \u2192 \"overlap -36px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>div.c3-text-wrapper>p.c3-subtitle  \u00abdiscover how c3 ai asset connect can help establish the digi\u00bb",
-      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -16px\"  @ html>body.up>div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>div.c3-text-wrapper>p.c3-subtitle  \u00abget in touch today.\u00bb"
+      "visual parity vs prod: no hard deltas. 69 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -1742,12 +1736,9 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:10(\u22651?True)",
-      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>h2 \u2014 content visually overlaps another in-flow element  overlaps <img> by 36px vert \u00d7 335px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='set the foundation for ai'",
-      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>p.c3-subtitle \u2014 content visually overlaps another in-flow element  overlaps <img> by 72px vert \u00d7 399px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='unify and contextualize data in a standardized object model optimized for machin'",
-      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>h2 \u2014 content visually overlaps another in-flow element  overlaps <img> by 36px vert \u00d7 414px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='see the full list of capabilities'",
-      "  - [overlap] div.off-canvas-content>div.content>section.c3-panel-contact-form.c3-bg-black>div.c3-container>form.mktoForm.mktoHasWidth>div.mktoButtonRow>span.mktoButtonWrap.mktoSimple>button.mktoButton \u2014 content visually overlaps another in-flow element  overlaps <img> by 20px vert \u00d7 131px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='schedule a briefing'",
-      "  - [overlap] html>body.up>div.off-canvas-content>div.content>section.c3-panel-logos.c3-bg-black>div.c3-container>p>a.c3-button \u2014 content visually overlaps another in-flow element  overlaps <h2> by 12px vert \u00d7 138px horiz  (other: 'see the full list of capabilities')  text='download data sheet'"
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:3(\u22651?True)",
+      "  - [overlap] html>body.is-scrolling.down>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>h2 \u2014 content visually overlaps another in-flow element  overlaps <img> by 35px vert \u00d7 335px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='set the foundation for ai'",
+      "  - [overlap] html>body.is-scrolling.down>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left>div.c3-container.abs-img-container>div.c3-text-wrapper>p.c3-subtitle \u2014 content visually overlaps another in-flow element  overlaps <img> by 71px vert \u00d7 399px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='unify and contextualize data in a standardized object model optimized for machin'"
      ]
     }
    ]
@@ -2005,8 +1996,8 @@
    "id": "products-c3-ai-field-services",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5:VISUAL_DELTA(FAIL)  [extractor: 36 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-field-services/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-field-services",
    "staging_ok": true,
@@ -2242,8 +2233,8 @@
    "id": "products-c3-ai-production-schedule-optimization",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 45 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-production-schedule-optimization/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-production-schedule-optimization",
    "staging_ok": true,
@@ -2303,8 +2294,8 @@
    "id": "products-c3-ai-property-appraisal",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 49 assets, 0 failed, 0 residual leak(s), 6 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-property-appraisal/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-property-appraisal",
    "staging_ok": true,
@@ -2599,8 +2590,8 @@
    "id": "products-c3-ai-supply-network-risk",
    "family": "products",
    "status": "product-page",
-   "verdict": "PASS",
-   "reason": "C6:flag(FLAG)  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]  [re-tallied: C5 geometric/soft + C6 non-gating on standalone]",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)  [extractor: 47 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/products/products-c3-ai-supply-network-risk",
    "staging_ok": true,
