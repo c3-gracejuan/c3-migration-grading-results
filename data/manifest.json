@@ -7,6 +7,10 @@
   "collection": {
    "label": "Collection tail",
    "n": 666
+  },
+  "collection_poc": {
+   "label": "Collection POC (dump migrator)",
+   "n": 21
   }
  },
  "staging_password_hint": "Vercel visitor password required to open migrated staging links"
