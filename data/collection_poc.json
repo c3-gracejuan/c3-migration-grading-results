@@ -2,15 +2,15 @@
  "rollup": {
   "n": 21,
   "dist": {
-   "FLAG-HUMAN": 1,
    "NEEDS-FIX": 1,
+   "ORACLE-UNAVAILABLE": 1,
    "PASS": 19
   },
   "dist_by_status": {
-   "FLAG-HUMAN": {
+   "NEEDS-FIX": {
     "poc": 1
    },
-   "NEEDS-FIX": {
+   "ORACLE-UNAVAILABLE": {
     "poc": 1
    },
    "PASS": {
@@ -42,9 +42,9 @@
    "family": "news",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign.webp",
    "prod_shot": null,
@@ -64,7 +64,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 328 text shingles, 0 imgs, 0 videos, 0 headings, 2 links covered"
+      "prod \u2286 migrated (strict): all 443 text shingles, 0 imgs, 0 videos, 2 headings, 2 links covered"
      ]
     },
     {
@@ -82,7 +82,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 8 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 19 matched node pairs (match_rate 95%); deltas: none"
      ]
     },
     {
@@ -100,7 +100,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/304); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/413); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -114,7 +114,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/3m-selects-c3-IoT-as-strategic-ai-software-platform/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/3m-selects-c3-iot-as-strategic-ai-software-platform",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/3m-selects-c3-iot-as-strategic-ai-software-platform",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/3m-selects-c3-iot-as-strategic-ai-software-platform.webp",
    "prod_shot": null,
@@ -134,7 +134,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 561 text shingles, 0 imgs, 0 videos, 3 headings, 1 links covered"
+      "prod \u2286 migrated (strict): all 573 text shingles, 0 imgs, 0 videos, 4 headings, 1 links covered"
      ]
     },
     {
@@ -152,7 +152,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 19 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 23 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -170,7 +170,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/555); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/567); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/3m-selects-c3-iot-as-strategic-ai-software-platform.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -182,9 +182,9 @@
    "family": "news",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/a-deep-data-lake-for-coronavirus-information/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/a-deep-data-lake-for-coronavirus-information",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/a-deep-data-lake-for-coronavirus-information",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/a-deep-data-lake-for-coronavirus-information.webp",
    "prod_shot": null,
@@ -204,7 +204,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 276 text shingles, 0 imgs, 0 videos, 0 headings, 4 links covered"
+      "prod \u2286 migrated (strict): all 293 text shingles, 1 imgs, 0 videos, 1 headings, 4 links covered"
      ]
     },
     {
@@ -219,10 +219,14 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "PASS",
-     "defect_code": null,
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
      "evidence": [
-      "visual parity vs prod: no hard deltas. 19 matched node pairs (match_rate 100%); deltas: none"
+      "VISUAL parity FAIL: 3 hard delta(s) vs prod (0 property, 3 geometric). 26 matched node pairs (match_rate 96%); deltas: rect:gap_collapse\u00d73, fontWeight\u00d73, fontSize\u00d73, fontFamily\u00d71, lineHeight\u00d71, display\u00d71",
+      "    rect:gap_collapse: \"gap 73px\" \u2192 \"gap 8px\"  @ html>body.up>div.content>div.grid-container>div.inner-content.grid-x>main.main.small-12>small  \u00abmay 16, 2020\u00bb",
+      "    rect:gap_collapse: \"gap 27px\" \u2192 \"gap 4px\"  @ html>body.up>div.content>div.grid-container>div.inner-content.grid-x>main.main.small-12>h1.entry-title.single-title  \u00aba deep \u201cdata lake\u201d for coronavirus information\u00bb",
+      "    rect:gap_collapse: \"gap 92px\" \u2192 \"gap 11px\"  @ article#post-30642>section.entry-content>p  \u00aba sprawling new \u201cdata lake\u201d of information about the covid-1\u00bb",
+      "    advisory (non-gating): 9 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -240,7 +244,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/276); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/293); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/a-deep-data-lake-for-coronavirus-information.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -252,9 +256,9 @@
    "family": "news",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector.webp",
    "prod_shot": null,
@@ -274,7 +278,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 316 text shingles, 0 imgs, 0 videos, 0 headings, 2 links covered"
+      "prod \u2286 migrated (strict): all 456 text shingles, 0 imgs, 0 videos, 2 headings, 2 links covered"
      ]
     },
     {
@@ -292,7 +296,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 14 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 26 matched node pairs (match_rate 93%); deltas: none"
      ]
     },
     {
@@ -310,7 +314,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/315); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/452); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -322,9 +326,9 @@
    "family": "news",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal.webp",
    "prod_shot": null,
@@ -344,7 +348,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 385 text shingles, 0 imgs, 0 videos, 0 headings, 3 links covered"
+      "prod \u2286 migrated (strict): all 499 text shingles, 0 imgs, 0 videos, 2 headings, 3 links covered"
      ]
     },
     {
@@ -362,7 +366,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 22 matched node pairs (match_rate 96%); deltas: none"
+      "visual parity vs prod: no hard deltas. 33 matched node pairs (match_rate 94%); deltas: none"
      ]
     },
     {
@@ -380,7 +384,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/378); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/490); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -392,9 +396,9 @@
    "family": "blog",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/6-must-read-books-for-ceos-in-the-new-digital-age/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-6-must-read-books-for-ceos-in-the-new-digital-age",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-6-must-read-books-for-ceos-in-the-new-digital-age",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-6-must-read-books-for-ceos-in-the-new-digital-age.webp",
    "prod_shot": null,
@@ -414,7 +418,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 636 text shingles, 0 imgs, 0 videos, 0 headings, 0 links covered"
+      "prod \u2286 migrated (strict): all 656 text shingles, 0 imgs, 0 videos, 1 headings, 0 links covered"
      ]
     },
     {
@@ -432,7 +436,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 20 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 25 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -450,7 +454,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/636); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/656); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-6-must-read-books-for-ceos-in-the-new-digital-age.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -462,9 +466,9 @@
    "family": "blog",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/a-summer-like-no-other/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-a-summer-like-no-other",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-a-summer-like-no-other",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-a-summer-like-no-other.webp",
    "prod_shot": null,
@@ -484,7 +488,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 657 text shingles, 0 imgs, 0 videos, 0 headings, 0 links covered"
+      "prod \u2286 migrated (strict): all 677 text shingles, 0 imgs, 0 videos, 1 headings, 0 links covered"
      ]
     },
     {
@@ -502,7 +506,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 7 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 12 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -520,7 +524,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/657); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/675); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-a-summer-like-no-other.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -534,7 +538,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 38 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/a-visual-guide-to-binary-classification-metrics/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-a-visual-guide-to-binary-classification-metrics",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-a-visual-guide-to-binary-classification-metrics",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-a-visual-guide-to-binary-classification-metrics.webp",
    "prod_shot": null,
@@ -554,7 +558,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 1448 text shingles, 10 imgs, 0 videos, 6 headings, 6 links covered"
+      "prod \u2286 migrated (strict): all 1464 text shingles, 10 imgs, 0 videos, 7 headings, 6 links covered"
      ]
     },
     {
@@ -572,7 +576,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 114 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 119 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -590,7 +594,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/1402); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/1418); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-a-visual-guide-to-binary-classification-metrics.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -602,9 +606,9 @@
    "family": "blog",
    "status": "poc",
    "verdict": "NEEDS-FIX",
-   "reason": "C4:WP_CONTENT_LEAK(FAIL); C6:flag(FLAG)  [extractor: 45 assets, 0 failed, 4 residual leak(s), 4 prod-404]",
+   "reason": "C4:WP_CONTENT_LEAK(FAIL); C6:flag(FLAG)  [extractor: 46 assets, 0 failed, 4 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/accelerating-decision-optimization-alchemist/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-accelerating-decision-optimization-alchemist",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-accelerating-decision-optimization-alchemist",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-accelerating-decision-optimization-alchemist.webp",
    "prod_shot": null,
@@ -624,7 +628,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 3040 text shingles, 4 imgs, 8 videos, 11 headings, 17 links covered"
+      "prod \u2286 migrated (strict): all 3058 text shingles, 4 imgs, 8 videos, 12 headings, 17 links covered"
      ]
     },
     {
@@ -643,14 +647,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 4 hard delta(s) vs prod (0 property, 4 geometric). 230 matched node pairs (match_rate 100%); deltas: rect:gap_collapse\u00d74",
-      "    rect:gap_collapse: \"gap 37px\" \u2192 \"gap 8px\"  @ html>body.up>section.entry-content>ol>li  \u00ab\u2014 synthesizing the discovery learnings into a clear, structu\u00bb",
-      "    rect:gap_collapse: \"gap 36px\" \u2192 \"gap 8px\"  @ html>body.up>section.entry-content>ol>li  \u00ab\u2014 translating the formalized process into a solvable mathema\u00bb",
-      "    rect:gap_collapse: \"gap 37px\" \u2192 \"gap 7px\"  @ html>body.up>section.entry-content>ol>li  \u00ab\u2014 presenting optimization results to the customer, who evalu\u00bb",
-      "    rect:gap_collapse: \"gap 37px\" \u2192 \"gap 8px\"  @ html>body.up>section.entry-content>ol>li  \u00ab\u2014 iterating on the formulation based on observed discrepanci\u00bb"
+      "visual parity vs prod: no hard deltas. 235 matched node pairs (match_rate 100%); deltas: fontWeight\u00d71, fontSize\u00d71"
      ]
     },
     {
@@ -660,10 +660,10 @@
      "defect_code": null,
      "evidence": [
       "layout suspect \u2014 geometry:4(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div#mep_0>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 5588, 'w': 1200, 'h': 0}",
-      "  - [geo] div#mep_1>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 6507, 'w': 1200, 'h': 0}",
-      "  - [geo] div#mep_2>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 7310, 'w': 1200, 'h': 0}",
-      "  - [geo] div#mep_3>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': 8209, 'w': 1200, 'h': 0}"
+      "  - [geo] div#mep_0>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 43, 'y': 6612, 'w': 883, 'h': 0}",
+      "  - [geo] div#mep_1>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 43, 'y': 7466, 'w': 883, 'h': 0}",
+      "  - [geo] div#mep_2>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 43, 'y': 8172, 'w': 883, 'h': 0}",
+      "  - [geo] div#mep_3>div.mejs-inner \u2014 collapsed to zero height while holding text  rect={'x': 43, 'y': 9056, 'w': 883, 'h': 0}"
      ]
     },
     {
@@ -672,7 +672,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/2987); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/3005); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-accelerating-decision-optimization-alchemist.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -686,7 +686,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/accelerating-enterprise-ai-in-the-cloud/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-accelerating-enterprise-ai-in-the-cloud",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-accelerating-enterprise-ai-in-the-cloud",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-accelerating-enterprise-ai-in-the-cloud.webp",
    "prod_shot": null,
@@ -706,7 +706,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 797 text shingles, 0 imgs, 0 videos, 0 headings, 5 links covered"
+      "prod \u2286 migrated (strict): all 812 text shingles, 0 imgs, 0 videos, 1 headings, 5 links covered"
      ]
     },
     {
@@ -724,7 +724,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 26 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 30 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -742,7 +742,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/793); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/808); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-accelerating-enterprise-ai-in-the-cloud.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -754,9 +754,9 @@
    "family": "blog",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/c3-ai-veterans-serving-the-nation-beyond-the-uniform/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform.webp",
    "prod_shot": null,
@@ -776,7 +776,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 3902 text shingles, 0 imgs, 0 videos, 9 headings, 4 links covered"
+      "prod \u2286 migrated (strict): all 3927 text shingles, 0 imgs, 0 videos, 10 headings, 4 links covered"
      ]
     },
     {
@@ -794,7 +794,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 48 matched node pairs (match_rate 100%); deltas: none"
+      "visual parity vs prod: no hard deltas. 53 matched node pairs (match_rate 100%); deltas: fontWeight\u00d71, fontSize\u00d71"
      ]
     },
     {
@@ -812,7 +812,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/3889); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/3912); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
@@ -824,9 +824,9 @@
    "family": "blog",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 38 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack.webp",
    "prod_shot": null,
@@ -846,7 +846,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 2398 text shingles, 1 imgs, 7 videos, 12 headings, 7 links covered"
+      "prod \u2286 migrated (strict): all 2426 text shingles, 1 imgs, 7 videos, 13 headings, 7 links covered"
      ]
     },
     {
@@ -861,12 +861,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 2 hard delta(s) vs prod (0 property, 2 geometric). 108 matched node pairs (match_rate 100%); deltas: rect:gap_collapse\u00d72",
-      "    rect:gap_collapse: \"gap 36px\" \u2192 \"gap 8px\"  @ html>body.up>section.entry-content>ol>li  \u00ab, capable of generating production-quality code for core app\u00bb",
-      "    rect:gap_collapse: \"gap 37px\" \u2192 \"gap 8px\"  @ html>body.up>section.entry-content>ol>li  \u00ab, which connects coding agents to c3 ai\u2013specific tools, prom\u00bb"
+      "visual parity vs prod: no hard deltas. 113 matched node pairs (match_rate 100%); deltas: fontWeight\u00d71, fontSize\u00d71"
      ]
     },
     {
@@ -884,7 +882,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/2365); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/2391); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -898,7 +896,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader.webp",
    "prod_shot": null,
@@ -968,7 +966,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 31 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai.webp",
    "prod_shot": null,
@@ -1038,7 +1036,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 31 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai.webp",
    "prod_shot": null,
@@ -1108,7 +1106,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai.webp",
    "prod_shot": null,
@@ -1178,7 +1176,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture.webp",
    "prod_shot": null,
@@ -1248,7 +1246,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass  [extractor: 38 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/conedison/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/customers-conedison",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/customers-conedison",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/customers-conedison.webp",
    "prod_shot": null,
@@ -1316,9 +1314,9 @@
    "family": "case-studies",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 51 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
+   "reason": "all required critics pass  [extractor: 48 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/improving-us-air-force-mission-capability-with-ai/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/improving-us-air-force-mission-capability-with-ai",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/improving-us-air-force-mission-capability-with-ai",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/improving-us-air-force-mission-capability-with-ai.webp",
    "prod_shot": null,
@@ -1338,7 +1336,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 1456 text shingles, 18 imgs, 1 videos, 18 headings, 10 links covered"
+      "prod \u2286 migrated (strict): all 1430 text shingles, 12 imgs, 1 videos, 14 headings, 7 links covered"
      ]
     },
     {
@@ -1357,7 +1355,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 158 matched node pairs (match_rate 99%); deltas: none"
+      "visual parity vs prod: no hard deltas. 139 matched node pairs (match_rate 99%); deltas: none"
      ]
     },
     {
@@ -1375,7 +1373,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/1422); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/1404); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/improving-us-air-force-mission-capability-with-ai.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
@@ -1386,11 +1384,11 @@
    "id": "microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
    "family": "news",
    "status": "poc",
-   "verdict": "FLAG-HUMAN",
-   "reason": "extractor: [FAIL] no content zone matched ['section.entry-content', '.entry-content', 'main.main', 'article.post', 'article'] for microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
+   "verdict": "ORACLE-UNAVAILABLE",
+   "reason": "prod oracle HTTP 200 / redirected",
    "prod_url": "https://c3.ai/microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": []
@@ -1400,9 +1398,9 @@
    "family": "news",
    "status": "poc",
    "verdict": "PASS",
-   "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
+   "reason": "all required critics pass  [extractor: 30 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/silicon-valley-wants-to-power-the-u-s-war-machine/",
-   "staging_url": "https://c3-payload-vercel-bf5sep9ch-c3-ai.vercel.app/poc/silicon-valley-wants-to-power-the-u-s-war-machine",
+   "staging_url": "https://c3-payload-vercel-iqs91868g-c3-ai.vercel.app/poc/silicon-valley-wants-to-power-the-u-s-war-machine",
    "staging_ok": true,
    "migrated_shot": "shots/collection_poc/silicon-valley-wants-to-power-the-u-s-war-machine.webp",
    "prod_shot": null,
@@ -1422,7 +1420,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 4407 text shingles, 0 imgs, 0 videos, 0 headings, 2 links covered"
+      "prod \u2286 migrated (strict): all 4425 text shingles, 1 imgs, 0 videos, 1 headings, 2 links covered"
      ]
     },
     {
@@ -1437,10 +1435,14 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "PASS",
-     "defect_code": null,
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
      "evidence": [
-      "visual parity vs prod: no hard deltas. 49 matched node pairs (match_rate 100%); deltas: none"
+      "VISUAL parity FAIL: 3 hard delta(s) vs prod (0 property, 3 geometric). 55 matched node pairs (match_rate 98%); deltas: rect:gap_collapse\u00d73, fontWeight\u00d72, fontSize\u00d72, fontFamily\u00d71, lineHeight\u00d71, display\u00d71",
+      "    rect:gap_collapse: \"gap 72px\" \u2192 \"gap 6px\"  @ html>body.up>div.content>div.grid-container>div.inner-content.grid-x>main.main.small-12>small  \u00abnovember 1, 2021\u00bb",
+      "    rect:gap_collapse: \"gap 28px\" \u2192 \"gap 4px\"  @ html>body.up>div.content>div.grid-container>div.inner-content.grid-x>main.main.small-12>h1.entry-title.single-title  \u00absilicon valley wants to power the u.s. war machine\u00bb",
+      "    rect:gap_collapse: \"gap 92px\" \u2192 \"gap 11px\"  @ article#post-46785>section.entry-content>p>em  \u00abamid rising tensions with china, a cadre of defense insiders\u00bb",
+      "    advisory (non-gating): 7 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -1458,7 +1460,7 @@
      "verdict": "FLAG",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 0% of prod body shingles (0/4402); canonical-doc body word count = 102",
+      "indexable body text in CANONICAL document: 0% of prod body shingles (0/4420); canonical-doc body word count = 102",
       "SEO DEFECT: the canonical URL serves an <iframe> shell; the article body is served from a SEPARATE URL (/poc-dumps/silicon-valley-wants-to-power-the-u-s-war-machine.html) that no crawler attributes to the canonical page \u2192 not indexable at the URL that ranks.",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
