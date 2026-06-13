@@ -45,6 +45,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/3-ai-celebrates-establishment-of-siebel-school-of-computing-data-science-at-the-university-of-illinois-urbana-champaign.webp",
    "prod_shot": null,
    "critics": [
@@ -114,6 +115,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/3m-selects-c3-IoT-as-strategic-ai-software-platform/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/3m-selects-c3-iot-as-strategic-ai-software-platform",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/3m-selects-c3-iot-as-strategic-ai-software-platform.webp",
    "prod_shot": null,
    "critics": [
@@ -183,6 +185,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/a-deep-data-lake-for-coronavirus-information/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/a-deep-data-lake-for-coronavirus-information",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/a-deep-data-lake-for-coronavirus-information.webp",
    "prod_shot": null,
    "critics": [
@@ -252,6 +255,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/ai-defense-forum-2023-to-feature-leaders-from-the-defense-and-intelligence-community-on-how-ai-is-reshaping-the-defense-sector.webp",
    "prod_shot": null,
    "critics": [
@@ -321,6 +325,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/ai-defense-forum-2024-convenes-defense-and-intelligence-leaders-on-the-future-of-enterprise-ai-for-federal.webp",
    "prod_shot": null,
    "critics": [
@@ -390,6 +395,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/6-must-read-books-for-ceos-in-the-new-digital-age/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-6-must-read-books-for-ceos-in-the-new-digital-age",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-6-must-read-books-for-ceos-in-the-new-digital-age.webp",
    "prod_shot": null,
    "critics": [
@@ -459,6 +465,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/a-summer-like-no-other/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-a-summer-like-no-other",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-a-summer-like-no-other.webp",
    "prod_shot": null,
    "critics": [
@@ -528,6 +535,7 @@
    "reason": "all required critics pass  [extractor: 38 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/a-visual-guide-to-binary-classification-metrics/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-a-visual-guide-to-binary-classification-metrics",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-a-visual-guide-to-binary-classification-metrics.webp",
    "prod_shot": null,
    "critics": [
@@ -597,6 +605,7 @@
    "reason": "C4:WP_CONTENT_LEAK(FAIL); C6:flag(FLAG)  [extractor: 45 assets, 0 failed, 4 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/accelerating-decision-optimization-alchemist/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-accelerating-decision-optimization-alchemist",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-accelerating-decision-optimization-alchemist.webp",
    "prod_shot": null,
    "critics": [
@@ -678,6 +687,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/accelerating-enterprise-ai-in-the-cloud/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-accelerating-enterprise-ai-in-the-cloud",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-accelerating-enterprise-ai-in-the-cloud.webp",
    "prod_shot": null,
    "critics": [
@@ -747,6 +757,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/c3-ai-veterans-serving-the-nation-beyond-the-uniform/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-c3-ai-veterans-serving-the-nation-beyond-the-uniform.webp",
    "prod_shot": null,
    "critics": [
@@ -816,6 +827,7 @@
    "reason": "all required critics pass  [extractor: 37 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/blog/from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/blog-from-prompt-to-production-building-enterprise-grade-applications-with-c3-ais-agentic-development-stack.webp",
    "prod_shot": null,
    "critics": [
@@ -887,6 +899,7 @@
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-100-forecasting-error-reduction-and-up-to-300m-saving-potential-for-a-global-high-tech-hardware-leader.webp",
    "prod_shot": null,
    "critics": [
@@ -956,6 +969,7 @@
    "reason": "all required critics pass  [extractor: 31 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-a-large-steel-manufacturer-enhanced-sales-insights-with-c3-generative-ai.webp",
    "prod_shot": null,
    "critics": [
@@ -1025,6 +1039,7 @@
    "reason": "all required critics pass  [extractor: 31 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-a-multinational-cpg-company-transformed-manufacturing-operations-with-c3-generative-ai.webp",
    "prod_shot": null,
    "critics": [
@@ -1094,6 +1109,7 @@
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-a-multinational-manufacturer-fueled-asset-inspection-efficiency-with-c3-generative-ai.webp",
    "prod_shot": null,
    "critics": [
@@ -1163,6 +1179,7 @@
    "reason": "all required critics pass  [extractor: 32 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-a-u-s-department-of-defense-agency-strengthens-logistics-resilience-with-ai-and-real-time-common-operating-picture.webp",
    "prod_shot": null,
    "critics": [
@@ -1232,6 +1249,7 @@
    "reason": "all required critics pass  [extractor: 38 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/customers/conedison/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/customers-conedison",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/customers-conedison.webp",
    "prod_shot": null,
    "critics": [
@@ -1301,6 +1319,7 @@
    "reason": "all required critics pass  [extractor: 51 assets, 0 failed, 0 residual leak(s), 5 prod-404]",
    "prod_url": "https://c3.ai/improving-us-air-force-mission-capability-with-ai/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/improving-us-air-force-mission-capability-with-ai",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/improving-us-air-force-mission-capability-with-ai.webp",
    "prod_shot": null,
    "critics": [
@@ -1371,6 +1390,7 @@
    "reason": "extractor: [FAIL] no content zone matched ['section.entry-content', '.entry-content', 'main.main', 'article.post', 'article'] for microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
    "prod_url": "https://c3.ai/microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/microsoft-adobe-and-tom-siebel-this-is-why-theyre-working-together-to-build-a-new-crm-platform",
+   "staging_ok": false,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": []
@@ -1383,6 +1403,7 @@
    "reason": "all required critics pass  [extractor: 29 assets, 0 failed, 0 residual leak(s), 4 prod-404]",
    "prod_url": "https://c3.ai/silicon-valley-wants-to-power-the-u-s-war-machine/",
    "staging_url": "https://c3-payload-vercel-git-deploy-test-3-products-c3-ai.vercel.app/poc/silicon-valley-wants-to-power-the-u-s-war-machine",
+   "staging_ok": false,
    "migrated_shot": "shots/collection_poc/silicon-valley-wants-to-power-the-u-s-war-machine.webp",
    "prod_shot": null,
    "critics": [
