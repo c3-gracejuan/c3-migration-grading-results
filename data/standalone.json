@@ -2,20 +2,20 @@
  "rollup": {
   "n": 20,
   "dist": {
-   "FLAG-HUMAN": 17,
-   "PASS": 3
+   "FLAG-HUMAN": 5,
+   "PASS": 15
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 17
+    "product-page": 5
    },
    "PASS": {
-    "product-page": 3
+    "product-page": 15
    }
   },
   "loss": {},
   "defects": {
-   "VISUAL_DELTA": 15
+   "VISUAL_DELTA": 3
   },
   "order": [
    "FLAG-HUMAN",
@@ -31,8 +31,8 @@
    "id": "c3-agentic-ai-websites",
    "family": "agentic-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-agentic-ai-websites/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-agentic-ai-websites",
    "staging_ok": true,
@@ -55,7 +55,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "prod \u2286 migrated (strict): all 557 text shingles, 12 imgs, 1 videos, 13 headings, 7 links covered"
+      "text: 4/536 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
+      "prod \u2286 migrated (strict): all 536 text shingles, 12 imgs, 0 videos, 13 headings, 6 links covered"
      ]
     },
     {
@@ -71,12 +72,11 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 88 matched node pairs (match_rate 100%); deltas: fontFamily\u00d751, fontWeight\u00d76, fontSize\u00d73, lineHeight\u00d73, rect:gap_collapse\u00d71",
-      "    rect:gap_collapse: \"gap 27px\" \u2192 \"gap 6px\"  @ section#transform>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img.alignnone.size-full",
-      "    advisory (non-gating): 63 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 75 matched node pairs (match_rate 100%); deltas: fontFamily\u00d750, display\u00d72",
+      "    advisory (non-gating): 52 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -103,7 +103,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (555/555); canonical-doc body word count = 711",
+      "indexable body text in CANONICAL document: 99% of prod body shingles (530/534); canonical-doc body word count = 711",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -113,8 +113,8 @@
    "id": "c3-ai-apa",
    "family": "company/other",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-ai-apa/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-ai-apa",
    "staging_ok": true,
@@ -153,12 +153,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 2 hard delta(s) vs prod (0 property, 2 geometric). 72 matched node pairs (match_rate 100%); deltas: fontFamily\u00d747, rect:gap_collapse\u00d72",
-      "    rect:gap_collapse: \"gap 27px\" \u2192 \"gap 6px\"  @ section#transform>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img.alignnone.size-full",
-      "    rect:gap_collapse: \"gap 27px\" \u2192 \"gap 6px\"  @ section#transform>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img.alignnone.size-full",
+      "visual parity vs prod: no hard deltas. 72 matched node pairs (match_rate 100%); deltas: fontFamily\u00d747",
       "    advisory (non-gating): 47 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -276,8 +274,8 @@
    "id": "c3-generative-ai-customers",
    "family": "generative-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-ai/customers/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-ai-customers",
    "staging_ok": true,
@@ -316,11 +314,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 154 matched node pairs (match_rate 100%); deltas: fontFamily\u00d767, lineHeight\u00d729, rect:box_overlap\u00d71, fontWeight\u00d71",
-      "    rect:box_overlap: \"gap 53px\" \u2192 \"overlap -24px\"  @ div#start-background-wrapper>section.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>h3  \u00ablearn more about using c3 generative ai\u00bb",
+      "visual parity vs prod: no hard deltas. 154 matched node pairs (match_rate 100%); deltas: fontFamily\u00d767, lineHeight\u00d729, fontWeight\u00d71",
       "    advisory (non-gating): 97 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -358,8 +355,8 @@
    "id": "c3-generative-ai-for-sales",
    "family": "generative-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-ai-for-sales/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-ai-for-sales",
    "staging_ok": true,
@@ -398,11 +395,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 72 matched node pairs (match_rate 100%); deltas: fontFamily\u00d754, rect:gap_collapse\u00d71",
-      "    rect:gap_collapse: \"gap 27px\" \u2192 \"gap 6px\"  @ section#transform>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img.alignnone.size-full",
+      "visual parity vs prod: no hard deltas. 72 matched node pairs (match_rate 100%); deltas: fontFamily\u00d754",
       "    advisory (non-gating): 54 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -440,8 +436,8 @@
    "id": "c3-generative-ai",
    "family": "generative-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-ai/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-ai",
    "staging_ok": true,
@@ -480,16 +476,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 14 hard delta(s) vs prod (0 property, 14 geometric). 208 matched node pairs (match_rate 100%); deltas: fontFamily\u00d786, lineHeight\u00d716, rect:gap_collapse\u00d78, rect:box_overlap\u00d76",
-      "    rect:gap_collapse: \"gap 33px\" \u2192 \"gap -3px\"  @ section#hero>div.grid-container>p.is-visible  \u00absurface and act on insights, all through a natural language \u00bb",
-      "    rect:box_overlap: \"gap 26px\" \u2192 \"overlap -12px\"  @ section#ready-secure-proven>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>h3  \u00abhigh accuracy\u00bb",
-      "    rect:box_overlap: \"gap 26px\" \u2192 \"overlap -12px\"  @ section#ready-secure-proven>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>h3  \u00abdomain specific\u00bb",
-      "    rect:box_overlap: \"gap 26px\" \u2192 \"overlap -12px\"  @ section#ready-secure-proven>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>h3  \u00abomni-modal data\u200b\u00bb",
-      "    rect:box_overlap: \"gap 26px\" \u2192 \"overlap -12px\"  @ section#ready-secure-proven>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>h3  \u00abadvanced reasoning\u200b\u00bb",
-      "    rect:gap_collapse: \"gap 28px\" \u2192 \"gap 0px\"  @ div#swiper-wrapper-34cec110f9ff11089e>div.swiper-slide>div.swiper-card>p.description  \u00abglobal financial services company deploys c3 generative ai t\u00bb",
+      "visual parity vs prod: no hard deltas. 208 matched node pairs (match_rate 100%); deltas: fontFamily\u00d786, lineHeight\u00d716",
       "    advisory (non-gating): 102 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -527,8 +517,8 @@
    "id": "c3-generative-marketing",
    "family": "generative-ai",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-marketing/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-marketing",
    "staging_ok": true,
@@ -567,11 +557,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 74 matched node pairs (match_rate 100%); deltas: fontFamily\u00d756, rect:gap_collapse\u00d71",
-      "    rect:gap_collapse: \"gap 31px\" \u2192 \"gap 6px\"  @ section#transform>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img.alignnone.size-full",
+      "visual parity vs prod: no hard deltas. 74 matched node pairs (match_rate 100%); deltas: fontFamily\u00d756",
       "    advisory (non-gating): 56 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -609,8 +598,8 @@
    "id": "products-c3-agentic-ai-platform-c3-code",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-agentic-ai-platform/c3-code/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-agentic-ai-platform-c3-code",
    "staging_ok": true,
@@ -648,14 +637,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 4 hard delta(s) vs prod (0 property, 4 geometric). 399 matched node pairs (match_rate 100%); deltas: fontSize\u00d718, lineHeight\u00d76, rect:box_overlap\u00d74, fontFamily\u00d73",
-      "    rect:box_overlap: \"gap 11px\" \u2192 \"overlap -5px\"  @ div.content>section.section.section-white>div>div.industry-tabs-wrapper>div.industry-tabs>div.industry-tab.active>div>p.industry-desc  \u00abprocess optimization, production scheduling, inventory optim\u00bb",
-      "    rect:box_overlap: \"gap 10px\" \u2192 \"overlap -5px\"  @ div.content>section.section.section-white>div>div.industry-tabs-wrapper>div.industry-tabs>div.industry-tab>div>p.industry-desc  \u00abanti-money laundering, smart lending, cash management\u00bb",
-      "    rect:box_overlap: \"gap 11px\" \u2192 \"overlap -5px\"  @ div.content>section.section.section-white>div>div.industry-tabs-wrapper>div.industry-tabs>div.industry-tab>div>p.industry-desc  \u00abreadiness optimization, decision advantage, intelligence ana\u00bb",
-      "    rect:box_overlap: \"gap 11px\" \u2192 \"overlap -5px\"  @ div.content>section.section.section-white>div>div.industry-tabs-wrapper>div.industry-tabs>div.industry-tab>div>p.industry-desc  \u00abclaims approvals, disease prediction call center support, cl\u00bb",
+      "visual parity vs prod: no hard deltas. 399 matched node pairs (match_rate 100%); deltas: fontSize\u00d718, lineHeight\u00d76, fontFamily\u00d73",
       "    advisory (non-gating): 27 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -708,7 +693,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3439 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3663 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -736,7 +721,7 @@
      "defect_code": "VISUAL_DELTA",
      "evidence": [
       "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 69 matched node pairs (match_rate 100%); deltas: lineHeight\u00d737, fontSize\u00d736, fontFamily\u00d723, rect:box_overlap\u00d71",
-      "    rect:box_overlap: \"gap 190px\" \u2192 \"overlap -1994px\"  @ html>body.is-scrolling.down>main>div.sa-dump>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left",
+      "    rect:box_overlap: \"gap 190px\" \u2192 \"overlap -2016px\"  @ html>body.is-scrolling.down>main>div.sa-dump>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left",
       "    advisory (non-gating): 96 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -764,7 +749,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (356/356); canonical-doc body word count = 509",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (356/356); canonical-doc body word count = 542",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -774,8 +759,8 @@
    "id": "products-c3-ai-contested-logistics",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-contested-logistics/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-contested-logistics",
    "staging_ok": true,
@@ -813,12 +798,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 2 hard delta(s) vs prod (0 property, 2 geometric). 96 matched node pairs (match_rate 100%); deltas: fontFamily\u00d728, fontWeight\u00d712, rect:gap_collapse\u00d72",
-      "    rect:gap_collapse: \"gap 21px\" \u2192 \"gap -1px\"  @ div.sa-dump>div.off-canvas-content>div.content>section.columns-container.pt-8>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>p.large  \u00abour capabilities enhance supply chain resilience and efficie\u00bb",
-      "    rect:gap_collapse: \"gap 21px\" \u2192 \"gap 3px\"  @ section#signup>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-7>p  \u00abdiscover how c3 ai contested logistics enables end-to-end lo\u00bb",
+      "visual parity vs prod: no hard deltas. 96 matched node pairs (match_rate 100%); deltas: fontFamily\u00d728, fontWeight\u00d712",
       "    advisory (non-gating): 40 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -856,8 +839,8 @@
    "id": "products-c3-ai-decision-advantage",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-decision-advantage/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-decision-advantage",
    "staging_ok": true,
@@ -895,11 +878,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 100 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739, lineHeight\u00d73, rect:gap_collapse\u00d71",
-      "    rect:gap_collapse: \"gap 48px\" \u2192 \"gap 4px\"  @ section#crm-request-demo-cta>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>p>a.button.hollow  \u00abc3 ai decision advantage - free demo\u00bb",
+      "visual parity vs prod: no hard deltas. 100 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739, lineHeight\u00d73",
       "    advisory (non-gating): 42 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -937,8 +919,8 @@
    "id": "products-c3-ai-energy-management",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-energy-management/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-energy-management",
    "staging_ok": true,
@@ -952,7 +934,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3316 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3665 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -976,12 +958,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 2 hard delta(s) vs prod (0 property, 2 geometric). 88 matched node pairs (match_rate 100%); deltas: fontFamily\u00d725, fontWeight\u00d76, rect:box_overlap\u00d72",
-      "    rect:box_overlap: \"gap 154px\" \u2192 \"overlap -10px\"  @ div#capabilities>section.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>p>img.alignnone.size-full",
-      "    rect:box_overlap: \"gap 153px\" \u2192 \"overlap -49px\"  @ div#capabilities>section.columns-container.pb-8>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>h2.fullwidth>strong  \u00absee the full list of capabilities\u00bb",
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: fontFamily\u00d725, fontWeight\u00d76",
       "    advisory (non-gating): 31 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -1009,7 +989,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (332/332); canonical-doc body word count = 494",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (332/332); canonical-doc body word count = 545",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1019,8 +999,8 @@
    "id": "products-c3-ai-esg",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-esg/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-esg",
    "staging_ok": true,
@@ -1058,12 +1038,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 2 hard delta(s) vs prod (0 property, 2 geometric). 99 matched node pairs (match_rate 100%); deltas: fontFamily\u00d741, lineHeight\u00d74, rect:box_overlap\u00d71, rect:gap_collapse\u00d71",
-      "    rect:box_overlap: \"gap 25px\" \u2192 \"overlap -8px\"  @ section#suite>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>h3  \u00abc3 generative ai: esg\u00bb",
-      "    rect:gap_collapse: \"gap 47px\" \u2192 \"gap 4px\"  @ section#crm-request-demo-cta>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>p>a.button.hollow  \u00abc3 ai esg - free demo\u00bb",
+      "visual parity vs prod: no hard deltas. 99 matched node pairs (match_rate 100%); deltas: fontFamily\u00d741, lineHeight\u00d74",
       "    advisory (non-gating): 45 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -1116,7 +1094,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3974 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3812 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1172,7 +1150,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 589",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 562",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1277,7 +1255,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 5650 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 5301 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1333,7 +1311,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (591/591); canonical-doc body word count = 791",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (591/591); canonical-doc body word count = 740",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1358,7 +1336,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4308 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4146 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1385,12 +1363,11 @@
      "verdict": "FAIL",
      "defect_code": "VISUAL_DELTA",
      "evidence": [
-      "VISUAL parity FAIL: 5 hard delta(s) vs prod (0 property, 5 geometric). 110 matched node pairs (match_rate 100%); deltas: fontFamily\u00d745, fontWeight\u00d710, rect:box_overlap\u00d74, rect:gap_collapse\u00d71",
-      "    rect:gap_collapse: \"gap 154px\" \u2192 \"gap 0px\"  @ div#capabilities>section.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-12>p>img.alignnone.size-full",
-      "    rect:box_overlap: \"gap 156px\" \u2192 \"overlap -28px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:box_overlap: \"gap 162px\" \u2192 \"overlap -26px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:box_overlap: \"gap 172px\" \u2192 \"overlap -21px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:box_overlap: \"gap 155px\" \u2192 \"overlap -5px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
+      "VISUAL parity FAIL: 4 hard delta(s) vs prod (0 property, 4 geometric). 110 matched node pairs (match_rate 100%); deltas: fontFamily\u00d745, fontWeight\u00d710, rect:gap_collapse\u00d74",
+      "    rect:gap_collapse: \"gap 156px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
+      "    rect:gap_collapse: \"gap 162px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
+      "    rect:gap_collapse: \"gap 172px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
+      "    rect:gap_collapse: \"gap 155px\" \u2192 \"gap 4px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
       "    advisory (non-gating): 55 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -1418,7 +1395,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (485/485); canonical-doc body word count = 651",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (485/485); canonical-doc body word count = 624",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1428,8 +1405,8 @@
    "id": "products-c3-ai-supply-chain-orchestration",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-supply-chain-orchestration/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-supply-chain-orchestration",
    "staging_ok": true,
@@ -1443,7 +1420,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4625 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4808 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1467,14 +1444,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 4 hard delta(s) vs prod (0 property, 4 geometric). 81 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739, fontWeight\u00d76, rect:gap_collapse\u00d74",
-      "    rect:gap_collapse: \"gap 196px\" \u2192 \"gap 10px\"  @ section#capabilities-cards>div.grid-container>div.capability-cards.grid-x>div.cell.large-3>p.copy  \u00abautonomously build and continuously optimize plans with ai a\u00bb",
-      "    rect:gap_collapse: \"gap 196px\" \u2192 \"gap 10px\"  @ section#capabilities-cards>div.grid-container>div.capability-cards.grid-x>div.cell.large-3>p.copy  \u00abdetect disruptions with early warning and adapt in real time\u00bb",
-      "    rect:gap_collapse: \"gap 196px\" \u2192 \"gap 10px\"  @ section#capabilities-cards>div.grid-container>div.capability-cards.grid-x>div.cell.large-3>p.copy  \u00abinteract with ai agents in natural language and a user-frien\u00bb",
-      "    rect:gap_collapse: \"gap 220px\" \u2192 \"gap 10px\"  @ section#capabilities-cards>div.grid-container>div.capability-cards.grid-x>div.cell.large-3>p.copy  \u00abutilize a scalable, ai-native platform to get results in wee\u00bb",
+      "visual parity vs prod: no hard deltas. 81 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739, fontWeight\u00d76",
       "    advisory (non-gating): 45 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -1502,7 +1475,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 670",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 697",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1527,7 +1500,7 @@
      "defect_code": null,
      "evidence": [
       "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3977 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4011 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1574,8 +1547,8 @@
      "defect_code": null,
      "evidence": [
       "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': -545, 'w': 288, 'h': 58}",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': -599, 'w': 288, 'h': 58}"
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': -552, 'w': 288, 'h': 58}",
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': -605, 'w': 288, 'h': 58}"
      ]
     },
     {
@@ -1584,7 +1557,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (404/404); canonical-doc body word count = 574",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (404/404); canonical-doc body word count = 580",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
