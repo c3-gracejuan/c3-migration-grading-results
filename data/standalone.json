@@ -2,15 +2,15 @@
  "rollup": {
   "n": 20,
   "dist": {
-   "FLAG-HUMAN": 4,
-   "PASS": 16
+   "FLAG-HUMAN": 3,
+   "PASS": 17
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 4
+    "product-page": 3
    },
    "PASS": {
-    "product-page": 16
+    "product-page": 17
    }
   },
   "loss": {},
@@ -104,6 +104,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (555/555); canonical-doc body word count = 702",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 95% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['turn every visit into instant answers'] / migrated ['turn every visit into instant answers'] \u00b7 alt-text 20.0% (5/25) \u2192 38.9% (7/18) \u00b7 body links 9 \u2192 8"
+     ]
     }
    ]
   },
@@ -184,6 +196,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (426/426); canonical-doc body word count = 567",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['c3 ai agentic process automation'] / migrated ['c3 ai agentic process automation'] \u00b7 alt-text 23.1% (6/26) \u2192 42.1% (8/19) \u00b7 body links 9 \u2192 8"
+     ]
     }
    ]
   },
@@ -262,6 +286,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (597/597); canonical-doc body word count = 735",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 96% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['enterprise ai starts here'] / migrated ['enterprise ai starts here'] \u00b7 alt-text 6.3% (4/63) \u2192 10.7% (6/56) \u00b7 body links 8 \u2192 7"
      ]
     }
    ]
@@ -343,6 +379,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (342/342); canonical-doc body word count = 588",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 96% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['c3 generative ai'] / migrated ['c3 generative ai'] \u00b7 alt-text 25.6% (11/43) \u2192 40.6% (13/32) \u00b7 body links 40 \u2192 40"
+     ]
     }
    ]
   },
@@ -422,6 +470,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (488/488); canonical-doc body word count = 625",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['c3 generative ai for sales'] / migrated ['c3 generative ai for sales'] \u00b7 alt-text 19.4% (6/31) \u2192 33.3% (8/24) \u00b7 body links 9 \u2192 8"
      ]
     }
    ]
@@ -503,6 +563,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (599/599); canonical-doc body word count = 767",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 97% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['c3 generative ai: this is agentic impact'] / migrated ['c3 generative ai: this is agentic impact'] \u00b7 alt-text 13.2% (5/38) \u2192 22.6% (7/31) \u00b7 body links 41 \u2192 40"
+     ]
     }
    ]
   },
@@ -583,6 +655,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (477/477); canonical-doc body word count = 613",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['c3 generative marketing'] / migrated ['c3 generative marketing'] \u00b7 alt-text 12.5% (4/32) \u2192 24.0% (6/25) \u00b7 body links 10 \u2192 9"
+     ]
     }
    ]
   },
@@ -661,6 +745,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (1138/1138); canonical-doc body word count = 1299",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['build enterprise ai apps with natural language'] / migrated ['build enterprise ai apps with natural language'] \u00b7 alt-text 31.2% (5/16) \u2192 70.0% (7/10) \u00b7 body links 4 \u2192 4"
      ]
     }
    ]
@@ -741,6 +837,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (356/356); canonical-doc body word count = 500",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 92% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['power transformation with digital assets'] / migrated ['power transformation with digital assets'] \u00b7 alt-text 25.0% (4/16) \u2192 66.7% (6/9) \u00b7 body links 4 \u2192 3"
+     ]
     }
    ]
   },
@@ -819,6 +927,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (306/306); canonical-doc body word count = 436",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 97% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['contested environments, joint logistics excellence'] / migrated ['contested environments, joint logistics excellence'] \u00b7 alt-text 33.3% (8/24) \u2192 58.8% (10/17) \u00b7 body links 8 \u2192 7"
      ]
     }
    ]
@@ -899,6 +1019,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (363/363); canonical-doc body word count = 481",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['accelerate decision-making cycles with ai insights'] / migrated ['accelerate decision-making cycles with ai insights'] \u00b7 alt-text 29.4% (10/34) \u2192 44.4% (12/27) \u00b7 body links 10 \u2192 10"
+     ]
     }
    ]
   },
@@ -978,6 +1110,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (332/332); canonical-doc body word count = 481",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 95% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['maximize energy efficiency'] / migrated ['maximize energy efficiency'] \u00b7 alt-text 20.0% (4/20) \u2192 46.2% (6/13) \u00b7 body links 7 \u2192 6"
+     ]
     }
    ]
   },
@@ -1056,6 +1200,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (451/451); canonical-doc body word count = 574",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['monitor, report, and accelerate esg performance with ai\\u200b'] / migrated ['monitor, report, and accelerate esg performance with ai\\u200b'] \u00b7 alt-text 15.8% (6/38) \u2192 29.6% (8/27) \u00b7 body links 12 \u2192 12"
      ]
     }
    ]
@@ -1137,6 +1293,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 553",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 98% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['optimize field operations'] / migrated ['optimize field operations'] \u00b7 alt-text 25.0% (4/16) \u2192 66.7% (6/9) \u00b7 body links 3 \u2192 2"
+     ]
     }
    ]
   },
@@ -1215,6 +1383,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (353/353); canonical-doc body word count = 469",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 100% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['uncover intelligence insights with ai'] / migrated ['uncover intelligence insights with ai'] \u00b7 alt-text 35.5% (11/31) \u2192 54.2% (13/24) \u00b7 body links 8 \u2192 7"
      ]
     }
    ]
@@ -1295,6 +1475,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (591/591); canonical-doc body word count = 727",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 97% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['ai-powered property appraisals'] / migrated ['ai-powered property appraisals'] \u00b7 alt-text 19.0% (4/21) \u2192 42.9% (6/14) \u00b7 body links 7 \u2192 6"
      ]
     }
    ]
@@ -1379,6 +1571,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (485/485); canonical-doc body word count = 615",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 98% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['boost mission readiness'] / migrated ['boost mission readiness'] \u00b7 alt-text 14.3% (4/28) \u2192 28.6% (6/21) \u00b7 body links 9 \u2192 8"
+     ]
     }
    ]
   },
@@ -1457,6 +1661,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 661",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 98% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2713\u2192\u2713 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['intelligent planning meets seamless execution'] / migrated ['intelligent planning meets seamless execution'] \u00b7 alt-text 28.6% (4/14) \u2192 85.7% (6/7) \u00b7 body links 6 \u2192 5"
      ]
     }
    ]
@@ -1539,6 +1755,18 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (404/404); canonical-doc body word count = 538",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 98% / rendered 100% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 5\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['ai-powered control tower'] / migrated ['ai-powered control tower'] \u00b7 alt-text 47.4% (9/19) \u2192 91.7% (11/12) \u00b7 body links 6 \u2192 5"
+     ]
     }
    ]
   },
@@ -1546,8 +1774,8 @@
    "id": "products-charm",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C6:flag(FLAG)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/charm/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-charm",
    "staging_ok": true,
@@ -1588,8 +1816,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 236 matched node pairs (match_rate 96%); deltas: lineHeight\u00d7132, fontFamily\u00d76, fontSize\u00d74",
-      "    advisory (non-gating): 142 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 236 matched node pairs (match_rate 96%); deltas: fontFamily\u00d76, fontSize\u00d74, lineHeight\u00d72",
+      "    advisory (non-gating): 12 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -1604,15 +1832,10 @@
     {
      "id": "C6",
      "name": "layout sanity",
-     "verdict": "FLAG",
+     "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:16(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': -5101, 'w': 1112, 'h': 0}",
-      "  - [geo] section#using-api \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2798, 'w': 1257, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2798, 'w': 1257, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2798, 'w': 959, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x>div.cell \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2798, 'w': 959, 'h': 447}"
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
      ]
     },
     {
@@ -1623,6 +1846,18 @@
      "evidence": [
       "indexable body text in CANONICAL document: 99% of prod body shingles (706/714); canonical-doc body word count = 844",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "SEO retention (prod-parity)",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "Body indexability \u2014 raw-SSR 96% / rendered 99% of prod body shingles present in the canonical doc (\u2705 crawlable with NO JavaScript; the retired iframe approach was 0%)",
+      "Head / meta vs prod \u2014 title \u2713\u2192\u2713 \u00b7 meta-description \u2717\u2192\u2717 \u00b7 rel=canonical \u2713\u2192\u2717 \u00b7 OpenGraph 4\u21920 tags \u00b7 Twitter-card 1\u21920 \u00b7 hreflang 0\u21920",
+      "Structured data (JSON-LD) \u2014 prod: ['BreadcrumbList', 'ImageObject', 'Organization', 'WebPage', 'WebSite'] \u2192 migrated: \u2014 \u00b7 LOST: BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      "Content semantics \u2014 H1 prod ['charm: a foundation model for time-series embeddings'] / migrated ['charm: a foundation model for time-series embeddings'] \u00b7 alt-text 20.0% (4/20) \u2192 46.2% (6/13) \u00b7 body links 7 \u2192 6"
      ]
     }
    ]
