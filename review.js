@@ -10,7 +10,6 @@
   const DS_LABEL = {
     standalone: "Product pages (the migration)",
     collection: "Collection tail",
-    collection_poc: "Collection POC (dump migrator)",
   };
   const CRITIC_VCLASS = (v) => v === "FAIL" ? "NEEDS-FIX" : v === "FLAG" ? "FLAG-HUMAN" : "PASS";
 
@@ -37,24 +36,6 @@
 
   // ── intro / usage banner (differs per dataset) ───────────────────────────
   function intro() {
-    if (dataset === "collection_poc") {
-      const ix = (DATA.rollup && DATA.rollup.indexable) || {};
-      const headline = ix.n_graded
-        ? `<b>${ix.not_indexable}/${ix.n_graded}</b> pages serve their article body from a
-           <b>separate URL</b> — it is <b>not present at the canonical URL</b> a search engine
-           indexes (median canonical-doc coverage <b>${ix.median_canonical_pct}%</b>).`
-        : "";
-      return `<div class="intro">
-        <p><b>POC: collection pages run through the file-system (dump) migrator</b> — the same
-        pipeline as the product pages, instead of Payload. Each page is graded for visual
-        fidelity vs prod (C1/C2/C4 gating; C5 visual parity + C6 layout advisory) <b>and</b>
-        for <b>SEO indexability</b> (C8). Click <b>↗ Live prod</b> and <b>↗ Migrated</b> to
-        compare; the MIGRATED render is shown below each card.</p>
-        <div class="note"><b>The decisive finding:</b> ${headline} Page <i>metadata</i>
-        (title/description) survives — only the body is missing from the canonical document.
-        Visual fidelity can look great while the page is SEO-broken; that contrast is the point.</div>
-      </div>`;
-    }
     if (dataset === "standalone") {
       return `<div class="intro">
         <p><b>The 47 priority product pages.</b> Each was migrated from the live c3.ai
@@ -216,6 +197,6 @@
 
   // initial dataset from the hash (#/collection or #/standalone)
   const h = (location.hash || "").replace(/^#\//, "");
-  if (h === "collection" || h === "standalone" || h === "collection_poc") dataset = h;
+  if (h === "collection" || h === "standalone") dataset = h;
   render();
 })();

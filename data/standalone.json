@@ -2,20 +2,20 @@
  "rollup": {
   "n": 20,
   "dist": {
-   "FLAG-HUMAN": 5,
-   "PASS": 15
+   "FLAG-HUMAN": 4,
+   "PASS": 16
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 5
+    "product-page": 4
    },
    "PASS": {
-    "product-page": 15
+    "product-page": 16
    }
   },
   "loss": {},
   "defects": {
-   "VISUAL_DELTA": 3
+   "VISUAL_DELTA": 2
   },
   "order": [
    "FLAG-HUMAN",
@@ -45,8 +45,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4568 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4507 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -55,8 +54,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "text: 4/536 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
-      "prod \u2286 migrated (strict): all 536 text shingles, 12 imgs, 0 videos, 13 headings, 6 links covered"
+      "prod \u2286 migrated (strict): all 557 text shingles, 12 imgs, 1 videos, 13 headings, 7 links covered"
      ]
     },
     {
@@ -75,8 +73,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 75 matched node pairs (match_rate 100%); deltas: fontFamily\u00d750, display\u00d72",
-      "    advisory (non-gating): 52 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: fontFamily\u00d751, fontWeight\u00d76, fontSize\u00d73, lineHeight\u00d73",
+      "    advisory (non-gating): 63 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -103,7 +101,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 99% of prod body shingles (530/534); canonical-doc body word count = 711",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (555/555); canonical-doc body word count = 702",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -127,7 +125,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 3823 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -208,8 +205,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4985 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4881 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -264,7 +260,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (597/597); canonical-doc body word count = 750",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (597/597); canonical-doc body word count = 735",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -288,8 +284,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4430 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4376 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -345,7 +340,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (342/342); canonical-doc body word count = 597",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (342/342); canonical-doc body word count = 588",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -369,7 +364,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 4386 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -450,7 +444,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 5487 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -531,7 +524,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 4229 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -612,7 +604,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 9422 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -678,8 +669,8 @@
    "id": "products-c3-ai-asset-connect",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-asset-connect/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-asset-connect",
    "staging_ok": true,
@@ -692,8 +683,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3663 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3378 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -717,11 +707,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 69 matched node pairs (match_rate 100%); deltas: lineHeight\u00d737, fontSize\u00d736, fontFamily\u00d723, rect:box_overlap\u00d71",
-      "    rect:box_overlap: \"gap 190px\" \u2192 \"overlap -2016px\"  @ html>body.is-scrolling.down>main>div.sa-dump>div.off-canvas-content>div.content>section.c3-panel-text-media.media-left",
+      "visual parity vs prod: no hard deltas. 69 matched node pairs (match_rate 100%); deltas: lineHeight\u00d737, fontSize\u00d736, fontFamily\u00d723",
       "    advisory (non-gating): 96 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -749,7 +738,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (356/356); canonical-doc body word count = 542",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (356/356); canonical-doc body word count = 500",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -773,8 +762,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3146 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3092 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -829,7 +817,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (306/306); canonical-doc body word count = 445",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (306/306); canonical-doc body word count = 436",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -853,7 +841,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 3338 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -933,8 +920,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3665 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3227 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -989,7 +975,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (332/332); canonical-doc body word count = 545",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (332/332); canonical-doc body word count = 481",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1013,7 +999,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 3997 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1093,8 +1078,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 3812 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3758 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1122,7 +1106,7 @@
      "defect_code": "VISUAL_DELTA",
      "evidence": [
       "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 65 matched node pairs (match_rate 100%); deltas: lineHeight\u00d736, fontSize\u00d735, fontFamily\u00d722, rect:box_overlap\u00d71",
-      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -114px\"  @ main>div.sa-dump>div.off-canvas-content>div.content>section.c3-panel-text-media.media-full>div.c3-container>div.c3-text-wrapper>p.c3-caption  \u00abdisclaimer: features and capabilities are still in developme\u00bb",
+      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -114px\"  @ div#sa-dump-root>div.off-canvas-content>div.content>section.c3-panel-text-media.media-full>div.c3-container>div.c3-text-wrapper>p.c3-caption  \u00abdisclaimer: features and capabilities are still in developme\u00bb",
       "    advisory (non-gating): 93 soft drift delta(s) (font/weight/align/size)"
      ]
     },
@@ -1150,7 +1134,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 562",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 553",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1174,7 +1158,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 3321 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1254,8 +1237,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 5301 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 5212 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1311,7 +1293,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (591/591); canonical-doc body word count = 740",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (591/591); canonical-doc body word count = 727",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1335,8 +1317,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4146 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4092 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1395,7 +1376,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (485/485); canonical-doc body word count = 624",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (485/485); canonical-doc body word count = 615",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1419,8 +1400,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4808 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4564 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1475,7 +1455,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 697",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 661",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1499,8 +1479,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
-      "HTTP 200, 4011 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 3740 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1547,8 +1526,8 @@
      "defect_code": null,
      "evidence": [
       "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': -552, 'w': 288, 'h': 58}",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': -605, 'w': 288, 'h': 58}"
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': -1000, 'w': 288, 'h': 58}",
+      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': -1053, 'w': 288, 'h': 58}"
      ]
     },
     {
@@ -1557,7 +1536,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (404/404); canonical-doc body word count = 580",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (404/404); canonical-doc body word count = 538",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
     }
@@ -1581,7 +1560,6 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 1 hydration-mismatch warning(s) \u2014 expected for a script-driven dump (suppressHydrationWarning).",
       "HTTP 200, 5595 chars text, no first-party 4xx, no gating console errors"
      ]
     },
@@ -1630,11 +1608,11 @@
      "defect_code": null,
      "evidence": [
       "layout suspect \u2014 geometry:16(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': -4652, 'w': 1112, 'h': 0}",
-      "  - [geo] section#using-api \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2349, 'w': 1257, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2349, 'w': 1257, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2349, 'w': 959, 'h': 447}",
-      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x>div.cell \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2349, 'w': 959, 'h': 447}"
+      "  - [geo] div#charm>section.section.section-featured>div.grid-container>div.c3-horizon-card--view-all \u2014 collapsed to zero height while holding text  rect={'x': 300, 'y': -5101, 'w': 1112, 'h': 0}",
+      "  - [geo] section#using-api \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2798, 'w': 1257, 'h': 447}",
+      "  - [geo] section#using-api>div.grid-container \u2014 overflows the viewport's right edge  rect={'x': 285, 'y': -2798, 'w': 1257, 'h': 447}",
+      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2798, 'w': 959, 'h': 447}",
+      "  - [geo] section#using-api>div.grid-container>div.grid-x.grid-padding-x>div.cell \u2014 overflows the viewport's right edge  rect={'x': 570, 'y': -2798, 'w': 959, 'h': 447}"
      ]
     },
     {
