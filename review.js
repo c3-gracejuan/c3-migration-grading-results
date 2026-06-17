@@ -11,7 +11,9 @@
     standalone: "Product pages (the migration)",
     collection: "Collection tail",
   };
-  const CRITIC_VCLASS = (v) => v === "FAIL" ? "NEEDS-FIX" : v === "FLAG" ? "FLAG-HUMAN" : "PASS";
+  const CRITIC_VCLASS = (v) =>
+    (v === "FAIL" || v === "AT-RISK") ? "NEEDS-FIX" :
+    (v === "FLAG" || v === "PARTIAL") ? "FLAG-HUMAN" : "PASS";  // GOOD/PASS -> green
 
   let dataset = "standalone";
   let DATA = null;                       // { rollup, records }
