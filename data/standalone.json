@@ -108,16 +108,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 95% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 20.0%\u219238.9%, body links 9\u21928"
      ]
     }
@@ -204,16 +204,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 23.1%\u219242.1%, body links 9\u21928"
      ]
     }
@@ -299,16 +299,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 96% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 6.3%\u219210.7%, body links 8\u21927"
      ]
     }
@@ -395,17 +395,17 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 96% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
-      " \u2705 Headings & image alt-text: H1 kept, alt-text 25.6%\u219240.6%, body links 40\u219240"
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 28.2%\u219240.6%, body links 40\u219240"
      ]
     }
    ]
@@ -491,16 +491,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 19.4%\u219233.3%, body links 9\u21928"
      ]
     }
@@ -587,16 +587,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 97% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 13.2%\u219222.6%, body links 41\u219240"
      ]
     }
@@ -683,16 +683,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 12.5%\u219224.0%, body links 10\u21929"
      ]
     }
@@ -778,16 +778,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 31.2%\u219270.0%, body links 4\u21924"
      ]
     }
@@ -873,16 +873,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 92% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 25.0%\u219266.7%, body links 4\u21923"
      ]
     }
@@ -968,16 +968,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 97% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 33.3%\u219258.8%, body links 8\u21927"
      ]
     }
@@ -1063,16 +1063,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 29.4%\u219244.4%, body links 10\u219210"
      ]
     }
@@ -1158,16 +1158,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 95% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 20.0%\u219246.2%, body links 7\u21926"
      ]
     }
@@ -1253,17 +1253,17 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
-      " \u2705 Headings & image alt-text: H1 kept, alt-text 15.8%\u219229.6%, body links 12\u219212"
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 17.6%\u219229.6%, body links 12\u219212"
      ]
     }
    ]
@@ -1349,16 +1349,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 98% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 25.0%\u219266.7%, body links 3\u21922"
      ]
     }
@@ -1444,17 +1444,17 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
-      " \u2705 Headings & image alt-text: H1 kept, alt-text 35.5%\u219254.2%, body links 8\u21927"
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 31.4%\u219254.2%, body links 8\u21927"
      ]
     }
    ]
@@ -1540,16 +1540,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 97% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 19.0%\u219242.9%, body links 7\u21926"
      ]
     }
@@ -1639,16 +1639,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 98% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 14.3%\u219228.6%, body links 9\u21928"
      ]
     }
@@ -1734,16 +1734,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 98% in raw server HTML / 100% rendered",
       " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2713, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 28.6%\u219285.7%, body links 6\u21925"
      ]
     }
@@ -1831,16 +1831,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
       " \u2705 Body indexable (the iframe-killer): 98% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 5 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 47.4%\u219291.7%, body links 6\u21925"
      ]
     }
@@ -1925,16 +1925,16 @@
     {
      "id": "SEO",
      "name": "retention vs prod",
-     "verdict": "PARTIAL",
+     "verdict": "GOOD",
      "defect_code": null,
      "evidence": [
-      "\u2705 Will index & rank \u2014 body fully crawlable with no JS (iframe was 0%). \u26a0 But lost 4 ranking extra(s) vs prod: canonical URL, OpenGraph, Twitter card, schema markup \u2014 improves ranking/appearance, doesn't block indexing.",
-      " \u2705 Body indexable (the iframe-killer): 96% in raw server HTML / 99% rendered",
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 96% in raw server HTML / 100% rendered",
       " \u274c Title \u00b7 description \u00b7 crawlable: title \u2713, description \u2717, not noindex \u2713",
-      " \u274c Canonical URL: missing \u2014 prod declared one",
-      " \u274c OpenGraph (link/social previews): prod 4 tags \u2192 migrated 0",
-      " \u274c Twitter card: prod 1 \u2192 migrated 0",
-      " \u274c Schema / rich results (JSON-LD): lost 5 type(s): BreadcrumbList, ImageObject, Organization, WebPage, WebSite",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 20.0%\u219246.2%, body links 7\u21926"
      ]
     }
