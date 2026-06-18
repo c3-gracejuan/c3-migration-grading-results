@@ -2,21 +2,15 @@
  "rollup": {
   "n": 20,
   "dist": {
-   "FLAG-HUMAN": 2,
-   "PASS": 18
+   "PASS": 20
   },
   "dist_by_status": {
-   "FLAG-HUMAN": {
-    "product-page": 2
-   },
    "PASS": {
-    "product-page": 18
+    "product-page": 20
    }
   },
   "loss": {},
-  "defects": {
-   "VISUAL_DELTA": 1
-  },
+  "defects": {},
   "order": [
    "FLAG-HUMAN",
    "NEEDS-FIX",
@@ -1557,8 +1551,8 @@
    "id": "products-c3-ai-readiness",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-readiness/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-readiness",
    "staging_ok": true,
@@ -1595,15 +1589,11 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 4 hard delta(s) vs prod (0 property, 4 geometric). 110 matched node pairs (match_rate 100%); deltas: fontFamily\u00d745, fontWeight\u00d710, rect:gap_collapse\u00d74",
-      "    rect:gap_collapse: \"gap 156px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:gap_collapse: \"gap 162px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:gap_collapse: \"gap 172px\" \u2192 \"gap 1px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    rect:gap_collapse: \"gap 155px\" \u2192 \"gap 4px\"  @ section#customers>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-3>p>img",
-      "    advisory (non-gating): 55 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 110 matched node pairs (match_rate 100%); deltas: fontWeight\u00d76",
+      "    advisory (non-gating): 6 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -1751,8 +1741,8 @@
    "id": "products-c3-ai-supply-network-risk",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C6:flag(FLAG)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-supply-network-risk/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-supply-network-risk",
    "staging_ok": true,
@@ -1792,8 +1782,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: fontFamily\u00d726, lineHeight\u00d718, fontWeight\u00d76",
-      "    advisory (non-gating): 50 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 88 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -1808,12 +1797,10 @@
     {
      "id": "C6",
      "name": "layout sanity",
-     "verdict": "FLAG",
+     "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 1548, 'y': -1000, 'w': 288, 'h': 58}",
-      "  - [geo] div.cell.large-12>div.flex.flex-col>p.c3-slide-buttons>a.c3-button \u2014 overflows the viewport's right edge  rect={'x': 2988, 'y': -1053, 'w': 288, 'h': 58}"
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
      ]
     },
     {
