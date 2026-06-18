@@ -2,7 +2,7 @@
  "datasets": {
   "standalone": {
    "label": "Product pages (migration)",
-   "n": 20
+   "n": 21
   },
   "collection": {
    "label": "Collection tail",
