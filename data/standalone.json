@@ -2,20 +2,20 @@
  "rollup": {
   "n": 20,
   "dist": {
-   "FLAG-HUMAN": 3,
-   "PASS": 17
+   "FLAG-HUMAN": 2,
+   "PASS": 18
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 3
+    "product-page": 2
    },
    "PASS": {
-    "product-page": 17
+    "product-page": 18
    }
   },
   "loss": {},
   "defects": {
-   "VISUAL_DELTA": 2
+   "VISUAL_DELTA": 1
   },
   "order": [
    "FLAG-HUMAN",
@@ -350,8 +350,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "[tolerated] 3 prod-404 ref(s) (broken on prod too): /wp-content/uploads/2023/08/c3-generative-ai-overview-large.svg",
-      "self-contained: no un-localized c3.ai/wp asset leaks (3 prod-broken refs tolerated)"
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): /wp-content/uploads/2023/08/c3-generative-ai-overview-large.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
      ]
     },
     {
@@ -360,8 +360,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 154 matched node pairs (match_rate 100%); deltas: fontFamily\u00d767, lineHeight\u00d729, fontWeight\u00d71",
-      "    advisory (non-gating): 97 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 154 matched node pairs (match_rate 100%); deltas: none"
      ]
     },
     {
@@ -1272,8 +1271,8 @@
    "id": "products-c3-ai-field-services",
    "family": "products",
    "status": "product-page",
-   "verdict": "FLAG-HUMAN",
-   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-ai-field-services/",
    "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-field-services",
    "staging_ok": true,
@@ -1310,11 +1309,10 @@
     {
      "id": "C5",
      "name": "visual parity",
-     "verdict": "FAIL",
-     "defect_code": "VISUAL_DELTA",
+     "verdict": "PASS",
+     "defect_code": null,
      "evidence": [
-      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 65 matched node pairs (match_rate 100%); deltas: lineHeight\u00d736, fontSize\u00d735, fontFamily\u00d722, rect:box_overlap\u00d71",
-      "    rect:box_overlap: \"gap 16px\" \u2192 \"overlap -114px\"  @ div#sa-dump-root>div.off-canvas-content>div.content>section.c3-panel-text-media.media-full>div.c3-container>div.c3-text-wrapper>p.c3-caption  \u00abdisclaimer: features and capabilities are still in developme\u00bb",
+      "visual parity vs prod: no hard deltas. 65 matched node pairs (match_rate 100%); deltas: lineHeight\u00d736, fontSize\u00d735, fontFamily\u00d722",
       "    advisory (non-gating): 93 soft drift delta(s) (font/weight/align/size)"
      ]
     },
