@@ -1,12 +1,16 @@
 {
  "rollup": {
-  "n": 23,
+  "n": 24,
   "dist": {
    "FLAG-HUMAN": 1,
+   "NEEDS-FIX": 1,
    "PASS": 22
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
+    "product-page": 1
+   },
+   "NEEDS-FIX": {
     "product-page": 1
    },
    "PASS": {
@@ -14,7 +18,9 @@
    }
   },
   "loss": {},
-  "defects": {},
+  "defects": {
+   "RENDER_HTTP": 1
+  },
   "order": [
    "FLAG-HUMAN",
    "NEEDS-FIX",
@@ -691,6 +697,29 @@
       " \u2705 Twitter card: prod 1 \u2192 migrated 4",
       " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 12.5%\u219224.0%, body links 10\u21929"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "product-portfolio-overview",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "NEEDS-FIX",
+   "reason": "C1:RENDER_HTTP(FAIL)",
+   "prod_url": "https://c3.ai/product-portfolio-overview/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/product-portfolio-overview",
+   "staging_ok": false,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "FAIL",
+     "defect_code": "RENDER_HTTP",
+     "evidence": [
+      "HTTP 404"
      ]
     }
    ]
@@ -1765,7 +1794,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "HTTP 200, 4564 chars text, no first-party 4xx, no gating console errors"
+      "HTTP 200, 4527 chars text, no first-party 4xx, no gating console errors"
      ]
     },
     {
@@ -1792,8 +1821,8 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "visual parity vs prod: no hard deltas. 81 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739, fontWeight\u00d76",
-      "    advisory (non-gating): 45 soft drift delta(s) (font/weight/align/size)"
+      "visual parity vs prod: no hard deltas. 81 matched node pairs (match_rate 100%); deltas: fontFamily\u00d739",
+      "    advisory (non-gating): 39 soft drift delta(s) (font/weight/align/size)"
      ]
     },
     {
@@ -1820,7 +1849,7 @@
      "verdict": "PASS",
      "defect_code": null,
      "evidence": [
-      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 661",
+      "indexable body text in CANONICAL document: 100% of prod body shingles (526/526); canonical-doc body word count = 656",
       "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
      ]
     },

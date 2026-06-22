@@ -1,0 +1,2028 @@
+{
+ "rollup": {
+  "n": 25,
+  "dist": {
+   "FLAG-HUMAN": 3,
+   "PASS": 22
+  },
+  "dist_by_status": {
+   "FLAG-HUMAN": {
+    "product-page": 3
+   },
+   "PASS": {
+    "product-page": 22
+   }
+  },
+  "loss": {},
+  "defects": {
+   "VISUAL_DELTA": 1
+  },
+  "order": [
+   "FLAG-HUMAN",
+   "NEEDS-FIX",
+   "NOT-MIGRATED",
+   "ORACLE-UNAVAILABLE",
+   "RENDERS-OK",
+   "PASS"
+  ]
+ },
+ "records": [
+  {
+   "id": "c3-agentic-ai-platform",
+   "family": "agentic-ai",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/c3-agentic-ai-platform/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-agentic-ai-platform",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 4605 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 562 text shingles, 43 imgs, 1 videos, 22 headings, 61 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 233 matched node pairs (match_rate 99%); deltas: fontFamily\u00d7158, lineHeight\u00d728, fontSize\u00d71",
+      "    advisory (non-gating): 187 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (480/480); canonical-doc body word count = 665",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3-ai-fellows",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/c3-ai-fellows/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-ai-fellows",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 6819 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 911 text shingles, 13 imgs, 0 videos, 18 headings, 5 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2020/08/play-button.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 139 matched node pairs (match_rate 100%); deltas: fontFamily\u00d751, fontWeight\u00d73",
+      "    advisory (non-gating): 54 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (897/897); canonical-doc body word count = 1014",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "careers",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/careers/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/careers",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 30958 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 4598 text shingles, 142 imgs, 0 videos, 242 headings, 2 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 589 matched node pairs (match_rate 100%); deltas: fontFamily\u00d7208",
+      "    advisory (non-gating): 208 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (2432/2432); canonical-doc body word count = 4701",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "company",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/company/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/company",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 6149 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 829 text shingles, 44 imgs, 2 videos, 20 headings, 32 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 190 matched node pairs (match_rate 98%); deltas: fontFamily\u00d7155",
+      "    advisory (non-gating): 155 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: 1 geometry node(s) < 2, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (711/711); canonical-doc body word count = 932",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "contact-us",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/contact-us/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/contact-us",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 2648 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 310 text shingles, 14 imgs, 0 videos, 10 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 90 matched node pairs (match_rate 100%); deltas: fontFamily\u00d765, lineHeight\u00d72",
+      "    advisory (non-gating): 67 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (286/286); canonical-doc body word count = 413",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-defense",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5:VISUAL_DELTA(FAIL)",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-defense/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-enterprise-ai-for-defense",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 15381 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 514 text shingles, 103 imgs, 0 videos, 50 headings, 14 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2022/05/Panda-rso.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "FAIL",
+     "defect_code": "VISUAL_DELTA",
+     "evidence": [
+      "VISUAL parity FAIL: 1 hard delta(s) vs prod (0 property, 1 geometric). 284 matched node pairs (match_rate 100%); deltas: fontFamily\u00d7208, rect:gap_collapse\u00d71",
+      "    rect:gap_collapse: \"gap 78px\" \u2192 \"gap -1px\"  @ div#related-resources>section.section.section-featured>div.grid-container>div.inner-content.grid-x>div.cell.is-visible>div.c3-horizon-card.post-wrapper>a.c3-horizon-card--link",
+      "    advisory (non-gating): 208 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (513/513); canonical-doc body word count = 2195",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-government",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5R:REVEAL_DEPENDENT(FLAG)",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-government/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-enterprise-ai-for-government",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 4225 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 464 text shingles, 19 imgs, 0 videos, 15 headings, 9 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 144 matched node pairs (match_rate 100%); deltas: fontFamily\u00d759, lineHeight\u00d747",
+      "    advisory (non-gating): 106 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "FLAG",
+     "defect_code": "REVEAL_DEPENDENT",
+     "evidence": [
+      "reveal-robustness FAIL: 3 content node(s) stay invisible \u2014 content gated behind an on-scroll reveal ([data-reveal-animation]/AOS) that did not fire. On the native path (scroll-driven probe) this means the dump's own reveal JS did not run \u2014 investigate the script replay (LayeredDump sequential-load / DOMContentLoaded shim) or a JS error; on the retired iframe path it was the non-scrolling mount / heavy hero starving the observer.",
+      "  - div.content.has-global-menu>section.section.customer_testimonials>div.grid-container>h2.section-title <h2> opacity=0  text='Customer Testimonials'",
+      "  - section.section.customer_testimonials>div.grid-container>div.grid-x.grid-margin-x>div.cell.large-6 <div> opacity=0  text='Jim Hannan EVP, CEO Enterprises \u201cThere\u2019s no question that C3 AI has ca'",
+      "  - section.section.customer_testimonials>div.grid-container>div.grid-x.grid-margin-x>div.cell.large-6 <div> opacity=0  text='Roshan Shah VP, Collaboration & Support Center Operations \u201cI can buy a'"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (460/460); canonical-doc body word count = 613",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-manufacturing",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-manufacturing/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-enterprise-ai-for-manufacturing",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 4627 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 512 text shingles, 25 imgs, 0 videos, 19 headings, 12 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 182 matched node pairs (match_rate 100%); deltas: fontFamily\u00d776, lineHeight\u00d763",
+      "    advisory (non-gating): 139 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (480/480); canonical-doc body word count = 679",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-oil-and-gas",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-oil-and-gas/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-enterprise-ai-for-oil-and-gas",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 1732 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 144 text shingles, 3 imgs, 0 videos, 2 headings, 1 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 14 matched node pairs (match_rate 100%); deltas: fontFamily\u00d72"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (142/142); canonical-doc body word count = 247",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-enterprise-ai-for-utilities",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C5R:REVEAL_DEPENDENT(FLAG); C6:flag(FLAG)",
+   "prod_url": "https://c3.ai/industries/enterprise-ai-for-utilities/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-enterprise-ai-for-utilities",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3680 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 401 text shingles, 22 imgs, 0 videos, 16 headings, 12 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 142 matched node pairs (match_rate 99%); deltas: fontFamily\u00d760, lineHeight\u00d736",
+      "    advisory (non-gating): 96 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "FLAG",
+     "defect_code": "REVEAL_DEPENDENT",
+     "evidence": [
+      "reveal-robustness FAIL: 5 content node(s) stay invisible \u2014 content gated behind an on-scroll reveal ([data-reveal-animation]/AOS) that did not fire. On the native path (scroll-driven probe) this means the dump's own reveal JS did not run \u2014 investigate the script replay (LayeredDump sequential-load / DOMContentLoaded shim) or a JS error; on the retired iframe path it was the non-scrolling mount / heavy hero starving the observer.",
+      "  - section#application1>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-4 <div> opacity=0  text='Prioritize and Optimize Asset Maintenance and Planning Learn More'",
+      "  - section#application1>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-4 <div> opacity=0  text='Ensure the optimal deployment and operational health of AMI assets Lea'",
+      "  - section#application1>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-4 <div> opacity=0  text='Manage and mitigate emergent product issues Learn More'",
+      "  - section#application2>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-4 <div> opacity=0  text='Reduce energy costs and improve building operations Learn More'",
+      "  - section#application2>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-4 <div> opacity=0  text='Next-generation CRM designed for AI/ML Learn More'"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:12(\u22651?True)",
+      "  - [overlap] div#slick-slide01>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 64px vert \u00d7 410px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='deploying enterprise data analytics and ami operations'",
+      "  - [overlap] div#slick-slide02>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 20px vert \u00d7 400px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='enterprise ai for commercial energy management'",
+      "  - [overlap] div#slick-slide00>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <img> by 6px vert \u00d7 154px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='realizing global 100 enterprise-wide digital transformation'",
+      "  - [overlap] div#slick-slide03>div.grid-x.grid-margin-x>div.cell.large-6>h3 \u2014 content visually overlaps another in-flow element  overlaps <h3> by 48px vert \u00d7 322px horiz  (other: 'realizing global 100 enterprise-wide dig')  text='predictive maintenance for electric grid'",
+      "  - [overlap] div#slick-slide01>div.grid-x.grid-margin-x>div.cell.large-6>p \u2014 content visually overlaps another in-flow element  overlaps <p> by 36px vert \u00d7 533px horiz  (other: 'enterprise-wide digital transformation o')  text='smart meter analytics for more than 5 million smart meters to improve customer s'"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (382/382); canonical-doc body word count = 536",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-healthcare-industry",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/industries/healthcare-industry/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-healthcare-industry",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 5297 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 639 text shingles, 69 imgs, 0 videos, 62 headings, 20 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 217 matched node pairs (match_rate 97%); deltas: fontFamily\u00d795",
+      "    advisory (non-gating): 95 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (606/606); canonical-doc body word count = 770",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "industries-maritime",
+   "family": "industries",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/industries/maritime/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/industries-maritime",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 8051 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1023 text shingles, 31 imgs, 1 videos, 8 headings, 11 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 164 matched node pairs (match_rate 99%); deltas: lineHeight\u00d778, fontSize\u00d776, fontFamily\u00d750, fontWeight\u00d74",
+      "    advisory (non-gating): 208 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (1014/1014); canonical-doc body word count = 1167",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leadership",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/leadership/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/leadership",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 35900 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 179 text shingles, 26 imgs, 0 videos, 31 headings, 2 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 78 matched node pairs (match_rate 100%); deltas: fontFamily\u00d712, fontSize\u00d72, lineHeight\u00d72",
+      "    advisory (non-gating): 16 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (179/179); canonical-doc body word count = 5577",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-c3-ai-aws-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/partners/c3-ai-aws-partnership/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/partners-c3-ai-aws-partnership",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chat.json' from origin 'http://loca",
+      "HTTP 200, 6855 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 885 text shingles, 40 imgs, 0 videos, 30 headings, 21 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/05/aws-hero-scaled.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 199 matched node pairs (match_rate 100%); deltas: fontFamily\u00d7144, lineHeight\u00d78, display\u00d72",
+      "    advisory (non-gating): 154 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (850/850); canonical-doc body word count = 1022",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-c3-ai-mckinsey-company",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/partners/c3-ai-mckinsey-company/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/partners-c3-ai-mckinsey-company",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 5491 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 632 text shingles, 11 imgs, 0 videos, 7 headings, 11 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 70 matched node pairs (match_rate 100%); deltas: fontFamily\u00d745, lineHeight\u00d712",
+      "    advisory (non-gating): 57 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (631/631); canonical-doc body word count = 812",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-googlecloud-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/partners/googlecloud-partnership/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/partners-googlecloud-partnership",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 5728 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 713 text shingles, 30 imgs, 0 videos, 20 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 4 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/09/google-cloud-partnership-video-poster.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (4 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 115 matched node pairs (match_rate 98%); deltas: fontFamily\u00d773, fontWeight\u00d74",
+      "    advisory (non-gating): 77 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (658/658); canonical-doc body word count = 828",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners-microsoft-azure-partnership",
+   "family": "partners",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/partners/microsoft-azure-partnership/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/partners-microsoft-azure-partnership",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 cross-origin widget XHR/CORS error(s) (prod-broken or remote widget, not our defect): Access to XMLHttpRequest at 'https://c3.ai/wp-content/uploads/2024/10/c3ai-readiness-chart.json' from origin 'http://loc",
+      "HTTP 200, 10792 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1408 text shingles, 93 imgs, 0 videos, 41 headings, 41 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2025/05/microsoft-hero-scaled.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 358 matched node pairs (match_rate 97%); deltas: textAlign\u00d7342, fontFamily\u00d7256, fontSize\u00d764, lineHeight\u00d764, fontWeight\u00d71",
+      "    advisory (non-gating): 727 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (1367/1367); canonical-doc body word count = 1589",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "partners",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/partners/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/partners",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 6141 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 837 text shingles, 64 imgs, 0 videos, 41 headings, 26 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 191 matched node pairs (match_rate 100%); deltas: fontFamily\u00d791",
+      "    advisory (non-gating): 91 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (803/803); canonical-doc body word count = 940",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-applications",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-applications/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-applications",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3811 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 428 text shingles, 62 imgs, 0 videos, 14 headings, 29 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2021/07/reliability-demo-video-poster.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 234 matched node pairs (match_rate 100%); deltas: fontFamily\u00d7174, lineHeight\u00d713",
+      "    advisory (non-gating): 187 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (408/408); canonical-doc body word count = 531",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-demand-forecasting",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-demand-planning/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-demand-forecasting",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3744 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 412 text shingles, 8 imgs, 1 videos, 16 headings, 5 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 101 matched node pairs (match_rate 100%); deltas: fontSize\u00d763, lineHeight\u00d763, fontFamily\u00d737",
+      "    advisory (non-gating): 163 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (409/409); canonical-doc body word count = 550",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-inventory-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-inventory-optimization/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-inventory-optimization",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3384 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 363 text shingles, 8 imgs, 0 videos, 11 headings, 4 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 96 matched node pairs (match_rate 100%); deltas: fontFamily\u00d732, fontWeight\u00d76",
+      "    advisory (non-gating): 38 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (362/362); canonical-doc body word count = 488",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-process-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-process-optimization/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-process-optimization",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3165 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 315 text shingles, 7 imgs, 0 videos, 11 headings, 5 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 86 matched node pairs (match_rate 100%); deltas: fontFamily\u00d725, fontWeight\u00d76",
+      "    advisory (non-gating): 31 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (313/313); canonical-doc body word count = 457",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-production-schedule-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-production-schedule-optimization/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-production-schedule-optimization",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 4224 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 470 text shingles, 8 imgs, 2 videos, 15 headings, 6 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 106 matched node pairs (match_rate 100%); deltas: fontSize\u00d769, lineHeight\u00d768, fontFamily\u00d739",
+      "    advisory (non-gating): 176 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (457/457); canonical-doc body word count = 609",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-reliability",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-reliability/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-reliability",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3118 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 343 text shingles, 8 imgs, 0 videos, 13 headings, 3 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2024/11/microsoft-slider-dow-scaled.jpg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 91 matched node pairs (match_rate 100%); deltas: fontFamily\u00d734, fontWeight\u00d711",
+      "    advisory (non-gating): 45 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (343/343); canonical-doc body word count = 468",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-sourcing-optimization",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/products/c3-ai-sourcing-optimization/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-sourcing-optimization",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 3584 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 380 text shingles, 5 imgs, 1 videos, 14 headings, 3 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 87 matched node pairs (match_rate 100%); deltas: fontSize\u00d753, lineHeight\u00d753, fontFamily\u00d731",
+      "    advisory (non-gating): 137 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (370/370); canonical-doc body word count = 518",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    }
+   ]
+  }
+ ]
+}

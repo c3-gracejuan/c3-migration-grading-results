@@ -1,8 +1,12 @@
 {
  "datasets": {
   "standalone": {
-   "label": "Product pages (migration)",
-   "n": 23
+   "label": "Product pages \u2014 original native set",
+   "n": 24
+  },
+  "iframe25": {
+   "label": "Product pages \u2014 iframe\u2192native (new)",
+   "n": 25
   },
   "collection": {
    "label": "Collection tail",

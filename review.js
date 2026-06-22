@@ -8,9 +8,14 @@
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   const DS_LABEL = {
-    standalone: "Product pages (the migration)",
+    standalone: "Product pages — original native set",
+    iframe25: "Product pages — iframe→native (new)",
     collection: "Collection tail",
   };
+  // Product-page datasets render the same way (areas filter, "migrated render" shots,
+  // product intro); only "collection" differs. Treat anything that isn't collection as a
+  // product-page dataset so a new product dataset needs no per-branch UI wiring.
+  const isProduct = (ds) => ds !== "collection";
   const CRITIC_VCLASS = (v) =>
     (v === "FAIL" || v === "AT-RISK") ? "NEEDS-FIX" :
     (v === "FLAG" || v === "PARTIAL") ? "FLAG-HUMAN" : "PASS";  // GOOD/PASS -> green
@@ -38,9 +43,20 @@
 
   // ── intro / usage banner (differs per dataset) ───────────────────────────
   function intro() {
+    if (dataset === "iframe25") {
+      return `<div class="intro">
+        <p><b>The iframe→native re-migration (25 pages).</b> These shipped on the retired
+        total-iframe route (0% SEO-indexable + the scroll-latching bug) and were
+        re-migrated to the native <code>/p/&lt;slug&gt;</code> @layer embed — the same
+        pipeline as the original product pages. Click <b>↗ Live prod</b> and
+        <b>↗ Migrated</b> to compare side by side.</p>
+        <div class="note">A separate dataset from the original native set so the two read
+        apart. Migrated links require the Vercel visitor password — ask Grace.</div>
+      </div>`;
+    }
     if (dataset === "standalone") {
       return `<div class="intro">
-        <p><b>The 47 priority product pages.</b> Each was migrated from the live c3.ai
+        <p><b>The original native product pages.</b> Each was migrated from the live c3.ai
         page it must reproduce, then graded. Click <b>↗ Live prod</b> and <b>↗ Migrated</b>
         to open the two pages and compare them side by side.</p>
         <div class="note">The migrated links require the Vercel visitor password — ask Grace.
@@ -73,7 +89,7 @@
       <div class="rollupbar">${chips}</div>
       <div class="toolbar">
         <input type="search" id="q" placeholder="search id / reason / evidence…" value="${esc(filters.q)}">
-        <select id="fam"><option value="">all ${dataset === "standalone" ? "areas" : "families"}</option>${fams.map((f) =>
+        <select id="fam"><option value="">all ${isProduct(dataset) ? "areas" : "families"}</option>${fams.map((f) =>
           `<option ${filters.fam === f ? "selected" : ""}>${esc(f)}</option>`).join("")}</select>
         <span class="progresslbl" id="shown"></span>
       </div>`;
@@ -197,8 +213,8 @@
     await render();
   }
 
-  // initial dataset from the hash (#/collection or #/standalone)
+  // initial dataset from the hash (#/collection, #/standalone, #/iframe25)
   const h = (location.hash || "").replace(/^#\//, "");
-  if (h === "collection" || h === "standalone") dataset = h;
+  if (h in DS_LABEL) dataset = h;
   render();
 })();
