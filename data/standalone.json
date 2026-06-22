@@ -2002,6 +2002,22 @@
       "indexable body text in CANONICAL document: 100% of prod body shingles (436/436); canonical-doc body word count = 567",
       "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
      ]
+    },
+    {
+     "id": "SEO",
+     "name": "retention vs prod",
+     "verdict": "GOOD",
+     "defect_code": null,
+     "evidence": [
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 96% in raw server HTML / 100% rendered",
+      " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713 \u00b7 description \u2014 none (prod has none either) \u00b7 crawlable \u2713",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 19.0%\u219242.9%, body links 6\u21926"
+     ]
     }
    ]
   },
