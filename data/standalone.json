@@ -1,10 +1,14 @@
 {
  "rollup": {
-  "n": 22,
+  "n": 23,
   "dist": {
+   "FLAG-HUMAN": 1,
    "PASS": 22
   },
   "dist_by_status": {
+   "FLAG-HUMAN": {
+    "product-page": 1
+   },
    "PASS": {
     "product-page": 22
    }
@@ -410,8 +414,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-ai-for-sales/",
-   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-ai-for-sales",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/sales",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -782,6 +786,107 @@
       " \u2705 Twitter card: prod 1 \u2192 migrated 4",
       " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 31.2%\u219270.0%, body links 4\u21924"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "products-c3-ai-anti-money-laundering",
+   "family": "products",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)",
+   "prod_url": "https://c3.ai/products/c3-ai-anti-money-laundering/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-ai-anti-money-laundering",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 6612 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "text: 4/368 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
+      "prod \u2286 migrated (strict): all 368 text shingles, 17 imgs, 1 videos, 19 headings, 10 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 89 matched node pairs (match_rate 100%); deltas: fontFamily\u00d734, lineHeight\u00d75, fontSize\u00d71",
+      "    advisory (non-gating): 40 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:0(\u22652?False) near-invisible-text:0(\u22651?False) overlap:23(\u22651?True)",
+      "  - [overlap] section#key-capabilities>div.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>div.key-capabilites-card-wrapper>h4 \u2014 content visually overlaps another in-flow element  overlaps <li> by 29px vert \u00d7 233px horiz  (other: 'prioritize aml alerts using a machine le')  text='ai-based early warning'",
+      "  - [overlap] section#key-capabilities>div.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>div.key-capabilites-card-wrapper>div.key-capabilities-hidden-wrapper>h5 \u2014 content visually overlaps another in-flow element  overlaps <img> by 23px vert \u00d7 35px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='ai-based aml risk detection'",
+      "  - [overlap] section#key-capabilities>div.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>div.key-capabilites-card-wrapper>h4 \u2014 content visually overlaps another in-flow element  overlaps <li> by 28px vert \u00d7 291px horiz  (other: 'improve the detection of risk with machi')  text='ai-based aml risk detection'",
+      "  - [overlap] section#key-capabilities>div.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>div.key-capabilites-card-wrapper>div.key-capabilities-hidden-wrapper>h5 \u2014 content visually overlaps another in-flow element  overlaps <img> by 23px vert \u00d7 35px horiz  (other: 'http://localhost:3000/assets/uploads/202')  text='360-degree customer view'",
+      "  - [overlap] section#key-capabilities>div.columns-container>div.grid-container>div.grid-x.grid-margin-y>div.cell.large-6>div.key-capabilites-card-wrapper>h4 \u2014 content visually overlaps another in-flow element  overlaps <li> by 28px vert \u00d7 271px horiz  (other: 'unify data from disparate internal and e')  text='360-degree customer view'"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 99% of prod body shingles (358/362); canonical-doc body word count = 917",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "retention vs prod",
+     "verdict": "GOOD",
+     "defect_code": null,
+     "evidence": [
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 98% in raw server HTML / 99% rendered",
+      " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713 \u00b7 description \u2713 \u00b7 crawlable \u2713",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 23.3%\u219227.8%, body links 12\u219210"
      ]
     }
    ]
@@ -1838,8 +1943,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-generative-ai-constituent-services/",
-   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-c3-generative-ai-constituent-services",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/c3-generative-ai-constituent-services",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -2028,8 +2133,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/charm/",
-   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/products-charm",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/p/charm",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
