@@ -47,11 +47,14 @@
       return `<div class="intro">
         <p><b>The iframe→native re-migration (25 pages).</b> These shipped on the retired
         total-iframe route (0% SEO-indexable + the scroll-latching bug) and were
-        re-migrated to the native <code>/p/&lt;slug&gt;</code> @layer embed — the same
-        pipeline as the original product pages. Click <b>↗ Live prod</b> and
-        <b>↗ Migrated</b> to compare side by side.</p>
+        re-migrated to the native <code>@layer</code> embed — the same pipeline as the
+        original product pages, now served at their real <code>/products/…</code> URLs.
+        Click <b>↗ Live prod</b> and <b>↗ Migrated</b> to compare side by side.</p>
         <div class="note">A separate dataset from the original native set so the two read
-        apart. Migrated links require the Vercel visitor password — ask Grace.</div>
+        apart. Migrated links require the Vercel visitor password — ask Grace. Note: only
+        the 7 product pages remain on the native track — the industries / partners / company
+        pages were later dropped from native (moved to the ported-pages track) and show
+        "migrated not available".</div>
       </div>`;
     }
     if (dataset === "standalone") {
