@@ -1,20 +1,20 @@
 {
  "rollup": {
-  "n": 24,
+  "n": 27,
   "dist": {
-   "FLAG-HUMAN": 1,
+   "FLAG-HUMAN": 2,
    "NEEDS-FIX": 1,
-   "PASS": 22
+   "PASS": 24
   },
   "dist_by_status": {
    "FLAG-HUMAN": {
-    "product-page": 1
+    "product-page": 2
    },
    "NEEDS-FIX": {
     "product-page": 1
    },
    "PASS": {
-    "product-page": 22
+    "product-page": 24
    }
   },
   "loss": {},
@@ -230,8 +230,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-ai-initial-production-deployment/",
-   "staging_url": "",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/c3-ai-initial-production-deployment",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -325,8 +325,8 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/c3-generative-ai/customers/",
-   "staging_url": "",
-   "staging_ok": false,
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/products/c3-generative-ai/customers",
+   "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
    "critics": [
@@ -697,6 +697,296 @@
       " \u2705 Twitter card: prod 1 \u2192 migrated 4",
       " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
       " \u2705 Headings & image alt-text: H1 kept, alt-text 12.5%\u219224.0%, body links 10\u21929"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "customers-overview",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "FLAG-HUMAN",
+   "reason": "C6:flag(FLAG)",
+   "prod_url": "https://c3.ai/customers/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/customers",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 13970 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "text: 20/1912 shingles differ (1%), no run \u22656 (tokenizer noise / minor reflow)",
+      "prod \u2286 migrated (strict): all 1912 text shingles, 94 imgs, 2 videos, 96 headings, 93 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "self-contained: no un-localized c3.ai/wp asset leaks (0 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 463 matched node pairs (match_rate 88%); deltas: fontFamily\u00d7327, fontSize\u00d75",
+      "    advisory (non-gating): 332 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "FLAG",
+     "defect_code": null,
+     "evidence": [
+      "layout suspect \u2014 geometry:2(\u22652?True) near-invisible-text:0(\u22651?False) overlap:0(\u22651?False)",
+      "  - [geo] div#section>div.c3-video-players \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': -9067, 'w': 1440, 'h': 0}",
+      "  - [geo] div#section>div.grid-container \u2014 collapsed to zero height while holding text  rect={'x': 0, 'y': -9067, 'w': 1440, 'h': 0}"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 99% of prod body shingles (1777/1797); canonical-doc body word count = 2019",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "retention vs prod",
+     "verdict": "GOOD",
+     "defect_code": null,
+     "evidence": [
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 97% in raw server HTML / 99% rendered",
+      " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713 \u00b7 description \u2713 \u00b7 crawlable \u2713",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2796 Headings & image alt-text: H1 missing, alt-text 67.6%\u219272.7%, body links 95\u219295"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "customers-shell",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/enterprise-ai-at-shell/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/customers/shell",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 8247 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1141 text shingles, 17 imgs, 1 videos, 13 headings, 12 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 2 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2020/06/c3-right-triangle.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (2 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 132 matched node pairs (match_rate 100%); deltas: fontFamily\u00d768, lineHeight\u00d716",
+      "    advisory (non-gating): 84 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (1137/1137); canonical-doc body word count = 1299",
+      "page metadata present in canonical doc (title=True, meta-description=False) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "retention vs prod",
+     "verdict": "GOOD",
+     "defect_code": null,
+     "evidence": [
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 99% in raw server HTML / 100% rendered",
+      " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713 \u00b7 description \u2014 none (prod has none either) \u00b7 crawlable \u2713",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 4 tags \u2192 migrated 4",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 3",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 13.3%\u219226.1%, body links 14\u219215"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "customers-us-air-force",
+   "family": "company/other",
+   "status": "product-page",
+   "verdict": "PASS",
+   "reason": "all required critics pass",
+   "prod_url": "https://c3.ai/improving-us-air-force-mission-capability-with-ai/",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/customers/us-air-force",
+   "staging_ok": true,
+   "migrated_shot": null,
+   "prod_shot": null,
+   "critics": [
+    {
+     "id": "C1",
+     "name": "render",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "HTTP 200, 10109 chars text, no first-party 4xx, no gating console errors"
+     ]
+    },
+    {
+     "id": "C2",
+     "name": "content coverage",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "prod \u2286 migrated (strict): all 1456 text shingles, 18 imgs, 1 videos, 18 headings, 10 links covered"
+     ]
+    },
+    {
+     "id": "C4",
+     "name": "links/assets",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "[tolerated] 1 prod-404 ref(s) (broken on prod too): https://c3.ai/wp-content/uploads/2020/06/c3-right-triangle.svg",
+      "self-contained: no un-localized c3.ai/wp asset leaks (1 prod-broken refs tolerated)"
+     ]
+    },
+    {
+     "id": "C5",
+     "name": "visual parity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "visual parity vs prod: no hard deltas. 159 matched node pairs (match_rate 100%); deltas: fontFamily\u00d777, lineHeight\u00d726, display\u00d71",
+      "    advisory (non-gating): 104 soft drift delta(s) (font/weight/align/size)"
+     ]
+    },
+    {
+     "id": "C5R",
+     "name": "",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "reveal-robust: content visible without the on-scroll reveal firing (reveal mechanism neutered, no scroll)"
+     ]
+    },
+    {
+     "id": "C6",
+     "name": "layout sanity",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "layout sane: no suspicious geometry, no near-invisible text, no content overlap"
+     ]
+    },
+    {
+     "id": "C8",
+     "name": "indexability",
+     "verdict": "PASS",
+     "defect_code": null,
+     "evidence": [
+      "indexable body text in CANONICAL document: 100% of prod body shingles (1422/1422); canonical-doc body word count = 1563",
+      "page metadata present in canonical doc (title=True, meta-description=True) \u2014 body absence is NOT a metadata problem"
+     ]
+    },
+    {
+     "id": "SEO",
+     "name": "retention vs prod",
+     "verdict": "GOOD",
+     "defect_code": null,
+     "evidence": [
+      "\u2705 Full SEO parity with prod \u2014 indexable and every signal retained.",
+      " \u2705 Body indexable (the iframe-killer): 100% in raw server HTML / 100% rendered",
+      " \u2705 Title \u00b7 description \u00b7 crawlable: title \u2713 \u00b7 description \u2713 \u00b7 crawlable \u2713",
+      " \u2705 Canonical URL: present",
+      " \u2705 OpenGraph (link/social previews): prod 5 tags \u2192 migrated 5",
+      " \u2705 Twitter card: prod 1 \u2192 migrated 4",
+      " \u2705 Schema / rich results (JSON-LD): 5 type(s) kept",
+      " \u2705 Headings & image alt-text: H1 kept, alt-text 19.4%\u219233.3%, body links 12\u219212"
      ]
     }
    ]
@@ -1972,7 +2262,7 @@
    "verdict": "PASS",
    "reason": "all required critics pass",
    "prod_url": "https://c3.ai/products/c3-generative-ai-constituent-services/",
-   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/products/generative-ai/c3-generative-ai-constituent-services",
+   "staging_url": "https://c3-payload-vercel-git-grace-standalone-native-embed-c3-ai.vercel.app/products/c3-generative-ai/c3-generative-ai-constituent-services",
    "staging_ok": true,
    "migrated_shot": null,
    "prod_shot": null,
